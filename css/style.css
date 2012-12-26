@@ -1,0 +1,571 @@
+@import url(reset.css);
+@font-face {
+  font-family: 'ComfortaaThin';
+  src: url('../fonts/Comfortaa_Thin-webfont.eot');
+  src: url('../fonts/Comfortaa_Thin-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Comfortaa_Thin-webfont.woff') format('woff'), url('../fonts/Comfortaa_Thin-webfont.ttf') format('truetype'), url('../fonts/Comfortaa_Thin-webfont.svg#ComfortaaThin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ComfortaaRegular';
+  src: url('../fonts/Comfortaa_Regular-webfont.eot');
+  src: url('../fonts/Comfortaa_Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Comfortaa_Regular-webfont.woff') format('woff'), url('../fonts/Comfortaa_Regular-webfont.ttf') format('truetype'), url('../fonts/Comfortaa_Regular-webfont.svg#ComfortaaRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ComfortaaBold';
+  src: url('../fonts/Comfortaa_Bold-webfont.eot');
+  src: url('../fonts/Comfortaa_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Comfortaa_Bold-webfont.woff') format('woff'), url('../fonts/Comfortaa_Bold-webfont.ttf') format('truetype'), url('../fonts/Comfortaa_Bold-webfont.svg#ComfortaaBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RochesterRegular';
+  src: url('../fonts/Rochester-Regular-webfont.eot');
+  src: url('../fonts/Rochester-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Rochester-Regular-webfont.woff') format('woff'), url('../fonts/Rochester-Regular-webfont.ttf') format('truetype'), url('../fonts/Rochester-Regular-webfont.svg#RochesterRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*----------------GENERAL---------------*/
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.outliner {
+  display: none;
+}
+.centrer {
+  width: 63.75em;
+  margin: auto;
+}
+body {
+  background-image: url('../img/site/motif5.png');
+  background-repeat: repeat;
+  color: #12320c;
+  font-family: 'ComfortaaThin';
+  font-size: 14px;
+}
+/*----------------HEADER---------------*/
+#logoIntro {
+  clear: both;
+  position: relative;
+  height: 16em;
+  margin-top: 2em;
+}
+#logoIntro h1 {
+  float: left;
+  width: 19.7em;
+}
+#logoIntro h2 {
+  font-family: 'RochesterRegular';
+  font-size: 2.1em;
+  float: right;
+  width: 73%;
+  text-align: right;
+  position: relative;
+  top: 3.3em;
+}
+#menu1 {
+  padding-top: 3em;
+  overflow: hidden;
+  padding-left: 3em;
+  width: 19em;
+  height: 4.5em;
+  float: left;
+  position: relative;
+  top: 7.5em;
+  right: -5em;
+  box-shadow: 0px 1px 0px rgba(18, 50, 12, 0.3);
+}
+.preMenu {
+  display: inline-block;
+  width: 8em;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ecf5e3;
+  border: 2px solid #68913a;
+  padding: 1.5em 0.5em 1.5em 0.5em;
+  margin: 0em -2em 0 -2em;
+  font-family: 'ComfortaaBold';
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+.preMenu:hover {
+  z-index: 10;
+  top: -0.2em;
+}
+.preMenu a {
+  color: #68913a;
+}
+#panierLogin {
+  font-size: 1.25em;
+  float: right;
+  z-index: 5;
+  width: 17em;
+  position: relative;
+  top: -1.7em;
+}
+#panierLogin a {
+  color: #68913a;
+  font-family: 'ComfortaaRegular';
+}
+#panierLogin a:hover {
+  color: #12320c;
+}
+#panier {
+  background-color: #ecf5e3;
+  border: 3px solid #68913a;
+  border-radius: 10px;
+  width: 11.7em;
+  height: 4em;
+  position: relative;
+  top: -0.4em;
+  right: -5em;
+}
+#imgPanier {
+  padding: 0.6em;
+  height: 1.2em;
+  margin-top: 0.7em;
+  margin-left: 0.6em;
+  float: left;
+  width: 2em;
+  background-image: url('../img/panier.png');
+  background-repeat: no-repeat;
+  background-size: 56.5px auto;
+}
+#imgPanier:hover {
+  background-image: url('../img/panierHover.png');
+}
+#infosPanier {
+  float: right;
+  text-align: right;
+  margin-right: 0.6em;
+  position: relative;
+  top: 1em;
+}
+#login ul {
+  text-align: right;
+  width: 17em;
+}
+#login li {
+  display: inline-block;
+}
+#login li + li:hover p {
+  visibility: visible;
+}
+#login p {
+  position: absolute;
+  font-size: 0.7em;
+  width: 19em;
+  top: 8.5em;
+  right: -0.5em;
+  color: #68913a;
+  visibility: hidden;
+}
+#accueilRecherche {
+  clear: both;
+}
+#imgAccueil {
+  float: left;
+  width: 3em;
+}
+#imgAccueil a {
+  display: inline-block;
+  height: 2.7em;
+}
+#recherche {
+  float: right;
+  width: 16em;
+  text-align: right;
+}
+#recherche form {
+  display: inline;
+}
+#recherche input {
+  background-color: #ecf5e3;
+  border: 2px solid #68913a;
+  border-radius: 20px;
+  color: #68913a;
+  padding-left: 2em;
+  font-family: 'ComfortaaRegular';
+  font-size: 1.1em;
+  background-image: url('../img/loupe.png');
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: 7px 4px;
+  height: 1.7em;
+  width: 8.6em;
+}
+#recherche button {
+  color: #ecf5e3;
+  font-family: 'ComfortaaRegular';
+  background-color: #68913a;
+  border-radius: 3px;
+  border-style: none;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+#recherche button:hover,
+#recherche button:active {
+  color: #68913a;
+  background-color: #ecf5e3;
+}
+nav {
+  clear: both;
+}
+nav h3 {
+  color: #ecf5e3;
+  padding-top: 4.5em;
+  background-repeat: no-repeat;
+  background-size: auto 54px;
+  background-position: center center;
+}
+.lienNav {
+  font-size: 1.25em;
+  font-family: 'ComfortaaRegular';
+  background-color: #68913a;
+  border-radius: 10px;
+  display: inline-block;
+  width: 5.5352em;
+  padding-bottom: 1em;
+  text-align: center;
+  margin-right: 0.395em;
+  margin-left: 0.395em;
+}
+.lienNav:first-child {
+  margin-left: 0;
+}
+.lienNav:last-child {
+  margin-right: 0;
+}
+.lienNav:hover {
+  background-color: #ecf5e3;
+}
+.lienNav:hover h3 {
+  color: #68913a;
+}
+.dropdown {
+  background-color: #ecf5e3;
+  position: absolute;
+  top: 22.3em;
+  border-radius: 10px;
+  text-align: left;
+  padding: 1em;
+  width: 49em;
+}
+.dropdown > ul {
+  font-size: 0.8em;
+  margin: 0 auto;
+}
+#hygiene h3 {
+  background-image: url('../img/menu/hygiene.png');
+}
+#hygiene:hover h3 {
+  background-image: url('../img/menuH/hygiene.png');
+}
+#bienEtre h3 {
+  background-image: url('../img/menu/bienEtre.png');
+}
+#bienEtre:hover h3 {
+  background-image: url('../img/menuH/bienEtre.png');
+}
+#grossesse h3 {
+  background-image: url('../img/menu/grossesse.png');
+}
+#grossesse:hover h3 {
+  background-image: url('../img/menuH/grossesse.png');
+}
+#bebe h3 {
+  background-image: url('../img/menu/bebe.png');
+}
+#bebe:hover h3 {
+  background-image: url('../img/menuH/bebe.png');
+}
+#vetements h3 {
+  background-image: url('../img/menu/vetements.png');
+}
+#vetements:hover h3 {
+  background-image: url('../img/menuH/vetements.png');
+}
+#maison h3 {
+  background-image: url('../img/menu/maison.png');
+}
+#maison:hover h3 {
+  background-image: url('../img/menuH/maison.png');
+}
+#livres h3 {
+  background-image: url('../img/menu/livres.png');
+}
+#livres:hover h3 {
+  background-image: url('../img/menuH/livres.png');
+}
+#divers h3 {
+  background-image: url('../img/menu/divers.png');
+}
+#divers:hover h3 {
+  background-image: url('../img/menuH/divers.png');
+}
+.colonne {
+  display: inline-block;
+  width: 15.1em;
+  vertical-align: top;
+}
+.colonne li {
+  margin-bottom: 0.1em;
+}
+.colonne a {
+  color: #12320c;
+}
+.colonne a:hover {
+  font-family: 'ComfortaaBold';
+}
+.titreCategorie {
+  font-family: 'ComfortaaBold';
+  color: #12320c;
+  margin: 1em 0 0.2em 0;
+  font-size: 1.05em;
+}
+/*----------------FIN HEADER---------------*/
+/*----------------CONTENT---------------*/
+#infosPrati {
+  height: 2.9em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#infosPrati p {
+  float: left;
+  width: 12.2em;
+  font-size: 0.9em;
+  color: #68913a;
+  font-family: 'ComfortaaRegular';
+  padding-top: 0.7em;
+  padding-left: 4em;
+  height: 3.5em;
+  background-repeat: no-repeat;
+  background-size: auto 45px;
+  margin: 0 1em 0 1em;
+}
+#infosPrati p:first-child {
+  background-image: url('../img/colis.png');
+  margin-left: 0;
+  padding-left: 4.5em;
+}
+#infosPrati p + p {
+  background-image: url('../img/cadeau.png');
+  padding-left: 3em;
+}
+#infosPrati p + p + p {
+  background-image: url('../img/euro.png');
+  padding-left: 4em;
+}
+#infosPrati p:last-child {
+  background-image: url('../img/conseil.png');
+  margin-right: 0;
+}
+#promoLiqui {
+  height: 17.4em;
+  margin-bottom: 3em;
+}
+#promoLiqui img {
+  border: 2px solid #C6564E;
+}
+#liqui {
+  float: right;
+  width: 15.3em;
+  margin-left: 0.5em;
+}
+#promo {
+  float: left;
+  width: 47.9em;
+}
+#nouveauxArt,
+#promosArt {
+  height: 27em;
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+}
+#nouveauxArt h2 a,
+#promosArt h2 a {
+  color: #68913a;
+  font-family: 'ComfortaaRegular';
+  border-bottom: 1px solid #68913a;
+  padding-bottom: 0.4em;
+  font-size: 1.4em;
+  display: block;
+  width: 19em;
+  text-transform: uppercase;
+}
+#nouveauxArt h2 a:hover,
+#promosArt h2 a:hover {
+  color: #12320c;
+  border-color: #12320c;
+}
+#nouveauxArt h2 + div,
+#promosArt h2 + div {
+  margin-top: 3em;
+}
+.nouvelArt,
+.promoArt {
+  position: relative;
+  float: left;
+  width: 14em;
+  background-color: #88aa5c;
+  border-radius: 10px;
+  padding: 0.5em 0.5em 2em 0.5em;
+  text-align: center;
+  margin: 0 0.6em 0 0.6em;
+  box-shadow: 0px 2px 7px #555555;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-out;
+}
+.nouvelArt a,
+.promoArt a {
+  color: #ecf5e3;
+}
+.nouvelArt:hover,
+.promoArt:hover {
+  position: relative;
+  top: -0.3em;
+}
+.nouvelArt:first-child,
+.promoArt:first-child {
+  margin-left: 0;
+}
+.nouvelArt:last-child,
+.promoArt:last-child {
+  margin-right: 0;
+}
+.nouvelArt h3,
+.promoArt h3 {
+  margin-top: 1em;
+}
+.price {
+  background-color: #ecf5e3;
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  border-radius: 55px;
+  border: 2px solid #68913a;
+  position: absolute;
+  top: -1.5em;
+  right: 11.5em;
+}
+.price span {
+  color: #68913a;
+  font-family: 'ComfortaaBold';
+  font-size: 1.3em;
+  position: relative;
+  top: 1em;
+}
+.ajoutPanier {
+  float: right;
+  position: relative;
+  top: 1.5em;
+}
+.voirTout {
+  float: right;
+  color: #68913a;
+  border-bottom: 1px solid #68913a;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+}
+.voirTout:hover {
+  color: #12320c;
+  border-color: #12320c;
+}
+/*--------FIN CONTENT-------*/
+/*--------FOOTER-------*/
+footer {
+  background-color: #ecf5e3;
+  margin-top: 8em;
+  background-image: url('../img/site/footer.png');
+  background-repeat: repeat-x;
+}
+#contenuFooter {
+  padding-top: 3em;
+  position: relative;
+}
+#hautPage {
+  position: absolute;
+  top: -5em;
+  right: -8em;
+}
+#rappelLogo {
+  float: left;
+  width: 15em;
+  position: relative;
+  top: 1em;
+}
+#listesFooter {
+  float: right;
+  width: 48em;
+  color: #68913a;
+}
+#listesFooter a {
+  color: #68913a;
+}
+#listesFooter a:hover {
+  color: #12320c;
+}
+#listesFooter h4 {
+  font-size: 1.4em;
+  font-family: 'ComfortaaBold';
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+.listeFooter {
+  display: inline-block;
+  width: 15em;
+  vertical-align: top;
+  margin: 0 0.5em 0 0.5em;
+}
+.listeFooter:first-child {
+  margin-left: 0;
+}
+.listeFooter:last-child {
+  margin-right: 0;
+}
+.fn {
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+.postal-code,
+.locality {
+  display: inline-block;
+}
+.email {
+  background-image: url('../img/email.png');
+  background-size: 20px auto;
+  background-repeat: no-repeat;
+  padding-left: 1.8em;
+}
+.country-name + li {
+  margin-top: 1em;
+}
+#copyright {
+  clear: both;
+  background-color: rgba(136, 170, 92, 0.7);
+  padding: 0.4em;
+}
+#copyright ul {
+  text-align: right;
+}
+#copyright li {
+  display: inline-block;
+  margin: 0 2em 0 2em;
+}
+#copyright li:first-child {
+  margin-left: 0;
+}
+#copyright li:last-child {
+  margin-right: 0;
+}
+/*--------FIN FOOTER-------*/

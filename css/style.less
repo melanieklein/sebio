@@ -1,0 +1,707 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'ComfortaaThin';
+    src: url('../fonts/Comfortaa_Thin-webfont.eot');
+    src: url('../fonts/Comfortaa_Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Comfortaa_Thin-webfont.woff') format('woff'),
+         url('../fonts/Comfortaa_Thin-webfont.ttf') format('truetype'),
+         url('../fonts/Comfortaa_Thin-webfont.svg#ComfortaaThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ComfortaaRegular';
+    src: url('../fonts/Comfortaa_Regular-webfont.eot');
+    src: url('../fonts/Comfortaa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Comfortaa_Regular-webfont.woff') format('woff'),
+         url('../fonts/Comfortaa_Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Comfortaa_Regular-webfont.svg#ComfortaaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ComfortaaBold';
+    src: url('../fonts/Comfortaa_Bold-webfont.eot');
+    src: url('../fonts/Comfortaa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Comfortaa_Bold-webfont.woff') format('woff'),
+         url('../fonts/Comfortaa_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Comfortaa_Bold-webfont.svg#ComfortaaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RochesterRegular';
+    src: url('../fonts/Rochester-Regular-webfont.eot');
+    src: url('../fonts/Rochester-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Rochester-Regular-webfont.woff') format('woff'),
+         url('../fonts/Rochester-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Rochester-Regular-webfont.svg#RochesterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@vertFonce: #12320c;
+@beige: #ecf5e3;
+@vert: #68913a;
+@vertClair: #88AA5C;
+
+@comfortaaT: 'ComfortaaThin';
+@comfortaaR: 'ComfortaaRegular';
+@comfortaaB: 'ComfortaaBold';
+@rochester: 'RochesterRegular';
+
+/*----------------GENERAL---------------*/
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.outliner {
+	display: none;
+}
+
+.centrer {
+	width: 63.75em;
+	margin: auto;
+}
+
+body{
+	background-image: url('../img/site/motif5.png');
+	background-repeat: repeat;
+	color: @vertFonce;
+	font-family: @comfortaaT;
+	font-size:14px;
+}
+
+/*----------------HEADER---------------*/
+
+#logoIntro {
+	clear:both;
+	position:relative;
+	height:16em;
+	margin-top: 2em;
+
+	h1 {
+		float: left;
+		width: 19.7em;
+	}
+
+	h2 {
+		font-family: @rochester;
+		font-size: 2.1em;
+		float:right;
+		width:73%;
+		text-align:right;
+		position: relative;
+		top:3.3em; 
+	}
+}
+
+#menu1 {
+	padding-top: 3em;
+	overflow:hidden;
+	padding-left: 3em;
+	width: 19em;
+	height: 4.5em;
+	float: left;
+	position: relative;
+	top:7.5em;
+	right:-5em;
+	box-shadow: 0px 1px 0px rgba(18,50,12,.3);
+}
+
+.preMenu {
+	display: inline-block;
+	width: 8em;
+	text-align: center;
+	border-radius: 5px;
+	background-color: @beige;
+	border: 2px solid @vert;
+	padding: 1.5em 0.5em 1.5em 0.5em;
+	margin: 0em -2em 0 -2em;
+	font-family: @comfortaaB;
+	position: relative;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+
+	&:hover {
+		z-index: 10;
+		top: -0.2em;
+	}
+
+	a {
+		color: @vert;
+	}
+}
+
+#panierLogin {
+	font-size: 1.25em;
+	float: right;
+	z-index:5;
+	width:17em;
+	position: relative;
+	top: -1.7em;
+	
+	a {
+		color: @vert;
+		font-family: @comfortaaR;
+
+		&:hover {
+		color: @vertFonce;
+		}
+	}
+}
+
+#panier {
+	background-color: @beige;
+	border: 3px solid @vert;
+	border-radius: 10px;
+	width: 11.7em;
+	height: 4em;
+	position: relative;
+	top: -0.4em;
+	right: -5em;
+}
+
+#imgPanier {
+	padding: 0.6em;
+	height:1.2em;
+	margin-top: 0.7em;
+	margin-left: 0.6em;
+	float: left;
+	width: 2em;
+	background-image: url('../img/panier.png');
+	background-repeat: no-repeat;
+	background-size: 56.5px auto;
+
+	&:hover {
+		background-image: url('../img/panierHover.png');
+	}
+}
+
+
+#infosPanier {
+	float: right;
+	text-align: right;
+	margin-right: 0.6em;
+	position: relative;
+	top: 1em;
+}
+
+#login {
+
+	ul {
+		text-align: right;
+		width: 17em;
+	}
+
+	li {
+		display: inline-block;
+
+		+li:hover p {
+			visibility: visible;
+		}
+	}
+
+	p {
+		position:absolute;
+		font-size: 0.7em;
+		width: 19em;
+		top: 8.5em;
+		right: -0.5em;
+		color: @vert;
+		visibility: hidden;
+	}
+}
+
+#accueilRecherche {
+	clear:both;
+}
+
+#imgAccueil {
+	float:left;
+	width:3em;
+
+	a {
+		display: inline-block;
+		height: 2.7em;
+	}
+}
+
+#recherche {
+	float:right;
+	width:16em;
+	text-align:right;
+
+	form {
+		display:inline;
+	}
+
+	input {
+		background-color: @beige;
+		border: 2px solid @vert;
+		border-radius: 20px;
+		color: @vert;
+		padding-left: 2em;
+		font-family: @comfortaaR;
+		font-size: 1.1em;
+		background-image: url('../img/loupe.png');
+		background-repeat: no-repeat;
+		background-size: 20px auto;
+		background-position: 7px 4px;
+		height: 1.7em;
+		width: 8.6em;
+	}
+
+	button {
+		color: @beige;
+		font-family: @comfortaaR;
+		background-color: @vert;
+		border-radius: 3px;
+		border-style: none;
+		font-size: 1.4em;
+		cursor: pointer;
+
+		&:hover, &:active{
+			color: @vert;
+			background-color: @beige;
+		}
+	}
+}
+
+
+nav {
+	clear:both;
+
+	h3 {
+		color: @beige;
+		padding-top:4.5em;
+		background-repeat: no-repeat;
+		background-size:auto 54px;
+		background-position: center center;
+	}
+}
+
+.lienNav {
+	font-size: 1.25em;
+	font-family: @comfortaaR;
+	background-color: @vert;
+	border-radius: 10px;
+
+	display: inline-block;
+	width: 5.5352em;
+	padding-bottom: 1em;
+	text-align: center;
+	margin-right:0.395em;
+	margin-left:0.395em;
+
+	&:first-child {
+		margin-left:0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		background-color: @beige;
+	}
+
+	&:hover h3 {
+		color: @vert;
+	}
+}
+
+.dropdown {
+	background-color: @beige;
+	position: absolute;
+	top:22.3em;
+	border-radius:10px;
+	text-align: left;
+	padding: 1em;
+	width:49em;
+
+	>ul {
+		font-size:0.8em;
+		margin:0 auto;
+	}
+}
+
+
+#hygiene h3 {
+	background-image:url('../img/menu/hygiene.png');
+
+}
+
+#hygiene:hover h3 {
+	background-image:url('../img/menuH/hygiene.png');
+}
+
+#bienEtre h3 {
+	background-image:url('../img/menu/bienEtre.png');
+}
+
+#bienEtre:hover h3 {
+	background-image:url('../img/menuH/bienEtre.png');
+}
+
+#grossesse h3 {
+	background-image:url('../img/menu/grossesse.png');
+}
+
+#grossesse:hover h3 {
+	background-image:url('../img/menuH/grossesse.png');
+}
+
+#bebe h3 {
+	background-image:url('../img/menu/bebe.png');
+}
+
+#bebe:hover h3 {
+	background-image:url('../img/menuH/bebe.png');
+}
+
+#vetements h3 {
+	background-image:url('../img/menu/vetements.png');
+}
+
+#vetements:hover h3 {
+	background-image:url('../img/menuH/vetements.png');
+}
+
+#maison h3 {
+	background-image:url('../img/menu/maison.png');
+}
+
+#maison:hover h3 {
+	background-image:url('../img/menuH/maison.png');
+}
+
+#livres h3 {
+	background-image:url('../img/menu/livres.png');
+}
+
+#livres:hover h3 {
+	background-image:url('../img/menuH/livres.png');
+}
+
+#divers h3 {
+	background-image:url('../img/menu/divers.png');
+}
+
+#divers:hover h3 {
+	background-image:url('../img/menuH/divers.png');
+}
+
+.colonne {
+	display:inline-block;
+	width: 15.1em;
+	vertical-align:top;
+
+	li {
+		margin-bottom: 0.1em;
+	}
+
+	a {
+		color: @vertFonce;
+	
+		&:hover {
+			font-family: @comfortaaB;
+		}
+	}
+}
+
+.titreCategorie {
+	font-family: @comfortaaB;
+	color: @vertFonce;
+	margin: 1em 0 0.2em 0;
+	font-size: 1.05em;
+}
+
+
+/*----------------FIN HEADER---------------*/
+
+/*----------------CONTENT---------------*/
+
+#infosPrati {
+	height:2.9em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+	p {
+		float: left;
+		width: 12.2em;
+		font-size: 0.9em;
+		color: @vert;
+		font-family: @comfortaaR;
+		padding-top: 0.7em;
+		padding-left: 4em;
+		height:3.5em;
+		background-repeat: no-repeat;
+		background-size: auto 45px;
+		margin: 0 1em 0 1em;
+
+		&:first-child{
+			background-image: url('../img/colis.png');
+			margin-left: 0;
+			padding-left: 4.5em;
+		}
+
+		+p{
+			background-image: url('../img/cadeau.png');
+			padding-left: 3em;
+		}
+
+		+p+p{
+			background-image: url('../img/euro.png');
+			padding-left: 4em;
+		}
+
+		&:last-child{
+			background-image: url('../img/conseil.png');
+			margin-right:0;
+		}
+	}
+
+}
+
+#promoLiqui {
+	height: 17.4em;
+	margin-bottom: 3em;
+
+	img {
+		border:2px solid #C6564E;
+	}
+}
+
+#liqui {
+	float:right;
+	width:15.3em;
+	margin-left: 0.5em;
+}
+
+
+#promo {
+	float:left;
+	width:47.9em;
+}
+
+#nouveauxArt, #promosArt {
+	height: 27em;
+	margin-top: 2.5em;
+	margin-bottom: 3em;
+
+	h2 a {
+		color: @vert;
+		font-family: @comfortaaR;
+		border-bottom: 1px solid @vert;
+		padding-bottom: 0.4em;
+		font-size:1.4em;
+		display:block;
+		width: 19em;
+		text-transform: uppercase;
+
+		&:hover {
+			color: @vertFonce;
+			border-color: @vertFonce;
+		}
+	}
+
+	h2+div {
+		margin-top: 3em;
+	}
+}
+
+.nouvelArt, .promoArt {
+	position:relative;
+	float: left;
+	width:14em;
+	background-color: @vertClair;
+	border-radius: 10px;
+	padding: 0.5em 0.5em 2em 0.5em;
+	text-align: center;
+	margin: 0 0.6em 0 0.6em;
+	box-shadow:0px 2px 7px #555555;
+	-webkit-transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-duration: 0.2s;
+	-moz-transition-timing-function: ease-out;
+
+	a {
+		color: @beige;
+	}
+
+	&:hover {
+		position: relative;
+		top: -0.3em;
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	h3 {
+	margin-top: 1em;
+	}
+}
+
+.price {
+	background-color: @beige;
+	display:inline-block;
+	height: 55px;
+	width:55px;
+	border-radius: 55px;
+	border: 2px solid @vert;
+	position: absolute;
+	top: -1.5em;
+	right: 11.5em;
+
+	span {
+		color: @vert;
+		font-family: @comfortaaB;
+		font-size: 1.3em;
+		position: relative;
+		top: 1em;
+	}
+}
+
+.ajoutPanier {
+	float: right;
+	position: relative;
+	top:1.5em;
+}
+
+.voirTout {
+	float:right;
+	color: @vert;
+	border-bottom: 1px solid @vert;
+	font-size: 1.1em;
+	margin-top: 0.5em;
+
+	&:hover {
+		color: @vertFonce;
+		border-color: @vertFonce;
+	}
+}
+
+/*--------FIN CONTENT-------*/
+
+/*--------FOOTER-------*/
+footer {
+	background-color: @beige;
+	margin-top: 8em;
+	background-image: url('../img/site/footer.png');
+	background-repeat: repeat-x;
+}
+
+#contenuFooter {
+	padding-top:3em;
+	position: relative;
+}
+
+#hautPage {
+	position: absolute;
+	top: -5em;
+	right: -8em;
+}
+
+#rappelLogo {
+	float: left;
+	width: 15em;
+	position: relative;
+	top: 1em;
+}
+
+#listesFooter {
+	float: right;
+	width:48em;
+	color: @vert;
+	
+	a {
+	color: @vert;
+	
+		&:hover {
+			color: @vertFonce;
+		}
+	}
+
+	h4 {
+		font-size: 1.4em;
+		font-family: @comfortaaB;
+		text-transform: uppercase;
+		margin-bottom: 0.2em;
+	}
+}
+
+.listeFooter {
+	display: inline-block;
+	width: 15em; 
+	vertical-align: top;
+	margin: 0 0.5em 0 0.5em;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+	margin-right: 0;
+	}
+}
+
+.fn {
+	font-size: 1.1em;
+	margin-bottom: 0.2em;
+}
+
+.postal-code, .locality {
+	display: inline-block;
+}
+
+.email {
+	background-image: url('../img/email.png');
+	background-size: 20px auto;
+	background-repeat: no-repeat;
+	padding-left: 1.8em;
+}
+
+.country-name + li {
+	margin-top: 1em;
+}
+
+#copyright {
+	clear: both;
+	background-color: rgba(136,170,92,.7);
+	padding: 0.4em;
+
+	ul {
+		text-align: right;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 2em 0 2em;
+
+		&:first-child {
+			margin-left:0;
+		}
+
+		&:last-child {
+			margin-right:0;
+		}
+	}
+}
+
+/*--------FIN FOOTER-------*/
