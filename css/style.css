@@ -481,6 +481,87 @@ nav h3 {
   color: #12320c;
   border-color: #12320c;
 }
+/*--------INSCRIPTION-------*/
+#conteneurIns {
+  height: 39em;
+}
+#inscription {
+  background-color: #88aa5c;
+  border-radius: 10px;
+  padding: 1em;
+  float: left;
+  width: 45.6em;
+  margin-right: 0.6em;
+}
+#inscription h1 {
+  color: #ecf5e3;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+#formIns fieldset {
+  background-color: #ecf5e3;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+#formIns h3 {
+  color: #68913a;
+  font-family: 'ComfortaaRegular';
+  font-size: 1.2em;
+  margin-bottom: 0.6em;
+}
+#formIns label {
+  width: 13em;
+  padding-right: 1em;
+  display: inline-block;
+  text-align: right;
+}
+#formIns input {
+  width: 19.9em;
+  border: 1px solid #68913a;
+  border-radius: 5px;
+  color: #68913a;
+  padding-left: 0.5em;
+  font-family: 'ComfortaaRegular';
+}
+#formIns button {
+  font-family: 'ComfortaaRegular';
+  text-transform: uppercase;
+  color: #68913a;
+  background-color: #ecf5e3;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  float: right;
+}
+#formIns button:hover,
+#formIns button:active,
+#formIns button:focus {
+  color: #ecf5e3;
+  background-color: #68913a;
+}
+#formIns select {
+  border-radius: 5px;
+  font-family: 'ComfortaaRegular';
+  color: #68913a;
+}
+#infosPaiement {
+  float: left;
+  width: 13em;
+  margin-left: 0.5em;
+  background-color: #88aa5c;
+  border-radius: 10px;
+  padding: 1em;
+}
+#infosPaiement h1 {
+  color: #ecf5e3;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
 /*--------FIN CONTENT-------*/
 /*--------FOOTER-------*/
 footer {
@@ -506,7 +587,7 @@ footer {
 }
 #listesFooter {
   float: right;
-  width: 48em;
+  width: 47.45em;
   color: #68913a;
 }
 #listesFooter a {

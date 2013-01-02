@@ -15,17 +15,31 @@
 	$('.dropdown').hide();
 
 	$('#hygiene').hover(function(){
-		$('.dropdown').show()
+		$('#hygiene .dropdown').show()
 	},
 	function(){
-		$('.dropdown').hide()
+		$('#hygiene .dropdown').hide()
 	});
 
 
-	$('.dropdown').hover(function(){
-		$('.dropdown').show()
+	$('#hygiene .dropdown').hover(function(){
+		$('#hygiene .dropdown').show()
 	},
-	function(){$('.dropdown').hide()
+	function(){$('#hygiene .dropdown').hide()
+	});
+
+	$('#bienEtre').hover(function(){
+		$('#bienEtre .dropdown').show()
+	},
+	function(){
+		$('#bienEtre .dropdown').hide()
+	});
+
+
+	$('#bienEtre .dropdown').hover(function(){
+		$('#bienEtre .dropdown').show()
+	},
+	function(){$('#bienEtre .dropdown').hide()
 	});
 
 
