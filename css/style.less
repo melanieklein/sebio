@@ -80,6 +80,10 @@ body{
 	font-size:14px;
 }
 
+::selection, ::-moz-selection {
+	background-color: #c2dca4;
+}
+
 /*----------------HEADER---------------*/
 
 #logoIntro {
@@ -268,7 +272,7 @@ body{
 		background-color: @vert;
 		border-radius: 3px;
 		border-style: none;
-		font-size: 1.4em;
+		font-size: 1.6em;
 		cursor: pointer;
 
 		&:hover, &:active{
@@ -329,6 +333,7 @@ nav {
 	text-align: left;
 	padding: 1em;
 	width:49em;
+	right: 13.07em;
 
 	>ul {
 		font-size:0.8em;
@@ -558,7 +563,7 @@ nav {
 	}
 }
 
-.price {
+.prix price {
 	background-color: @beige;
 	display:inline-block;
 	height: 55px;
@@ -600,7 +605,7 @@ nav {
 /*--------INSCRIPTION-------*/
 
 #conteneurIns {
-	height: 39em;
+	height: 55em;
 }
 
 #inscription {
@@ -684,11 +689,86 @@ nav {
 	}
 }
 
+
+/*--------FICHE PRODUIT-------*/
+#ficheProduit {
+	display:table;
+	margin-top: 3em;
+}
+
+.imagesFiche {
+	width: 23.3em;
+	float:left;
+	margin-right: 1em;
+	img {
+		width: 23.3em;
+	}
+}
+
+.infosFiche {
+	float: left;
+	width: 39.41em;
+
+	.fn {		
+		font-family: @comfortaaR;		
+		font-size: 2.3em;		
+	}
+
+	.brand {
+		font-size: 1.5em;
+		color: @vert;
+		font-family: @comfortaaB;
+		text-transform: uppercase;
+	}
+
+	.prixProduit {
+		display: block;
+		font-family: @comfortaaR;
+		font-size: 2.3em;
+		color: @vertFonce;
+	}
+
+	.description {
+		margin-top: 1em;
+		font-size: 1.1em;
+		font-family: @comfortaaR;
+		line-height: 1.3em;
+	}
+}
+
+.details {
+
+	width: 23.3em;
+
+	li {
+		width: 6.9em;
+		display:inline-block;
+		margin-right: 1em;
+
+		&:nth-child(3),&:nth-child(6){
+			margin-right: 0;
+		}
+
+		img {
+			width: 6.9em;
+			height: auto;
+		}
+	}
+}
+
+.produit .ajoutPanier img {
+	width: 15em;
+	height:auto;
+}
+
+/*--------FIN FICHE PRODUIT-------*/
+
 /*--------FIN CONTENT-------*/
 
 
 /*--------FOOTER-------*/
 footer {
+	clear:both;
 	background-color: @beige;
 	margin-top: 8em;
 	background-image: url('../img/site/footer.png');

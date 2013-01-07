@@ -11,38 +11,14 @@
 
 	});
 
-	
 	$('.dropdown').hide();
-
-	$('#hygiene').hover(function(){
-		$('#hygiene .dropdown').show()
-	},
-	function(){
-		$('#hygiene .dropdown').hide()
-	});
-
-
-	$('#hygiene .dropdown').hover(function(){
-		$('#hygiene .dropdown').show()
-	},
-	function(){$('#hygiene .dropdown').hide()
-	});
-
-	$('#bienEtre').hover(function(){
-		$('#bienEtre .dropdown').show()
-	},
-	function(){
-		$('#bienEtre .dropdown').hide()
-	});
-
-
-	$('#bienEtre .dropdown').hover(function(){
-		$('#bienEtre .dropdown').show()
-	},
-	function(){$('#bienEtre .dropdown').hide()
-	});
-
-
+	$('.lienNav').hoverIntent( 
+		function(){
+			$('.dropdown', this).show();
+		},
+		function(){
+			$('.dropdown', this).hide();
+		});
 		
 	$(function() {
   		$('#hautPage a').click(function(){
