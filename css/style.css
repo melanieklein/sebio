@@ -230,6 +230,9 @@ nav h3 {
   background-size: auto 54px;
   background-position: center center;
 }
+nav ul {
+  position: relative;
+}
 .lienNav {
   font-size: 1.25em;
   font-family: 'ComfortaaRegular';
@@ -257,12 +260,13 @@ nav h3 {
 .dropdown {
   background-color: #ecf5e3;
   position: absolute;
-  top: 22.3em;
+  top: 5.8em;
   border-radius: 10px;
   text-align: left;
   padding: 1em;
   width: 49em;
-  right: 13.07em;
+  right: 0em;
+  z-index: 1;
 }
 .dropdown > ul {
   font-size: 0.8em;
@@ -452,7 +456,7 @@ nav h3 {
 .promoArt h3 {
   margin-top: 1em;
 }
-.prix price {
+.prix {
   background-color: #ecf5e3;
   display: inline-block;
   height: 55px;
@@ -463,7 +467,7 @@ nav h3 {
   top: -1.5em;
   right: 11.5em;
 }
-.prix price span {
+.prix span {
   color: #68913a;
   font-family: 'ComfortaaBold';
   font-size: 1.3em;
@@ -474,13 +478,25 @@ nav h3 {
   float: right;
   position: relative;
   top: 1.5em;
+  font-family: 'ComfortaaRegular';
+  background-color: #68913a;
+  border-radius: 5px 5px 5px 5px;
+  padding: 0.7em 0.7em 0.7em 2.7em;
+  background-image: url('../img/ajoutPanier.png');
+  background-repeat: no-repeat;
+  background-size: 34px;
+  color: #ecf5e3;
+}
+.ajoutPanier:hover {
+  background-image: url('../img/ajoutPanierHover.png');
 }
 .voirTout {
   float: right;
   color: #68913a;
   border-bottom: 1px solid #68913a;
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-top: 0.5em;
+  font-family: 'ComfortaaRegular';
 }
 .voirTout:hover {
   color: #12320c;
@@ -580,10 +596,6 @@ nav h3 {
 .imagesFiche img {
   width: 23.3em;
 }
-.infosFiche {
-  float: left;
-  width: 39.41em;
-}
 .infosFiche .fn {
   font-family: 'ComfortaaRegular';
   font-size: 2.3em;
@@ -597,14 +609,50 @@ nav h3 {
 .infosFiche .prixProduit {
   display: block;
   font-family: 'ComfortaaRegular';
-  font-size: 2.3em;
+  font-size: 1.8em;
   color: #12320c;
+  clear: right;
 }
 .infosFiche .description {
   margin-top: 1em;
   font-size: 1.1em;
   font-family: 'ComfortaaRegular';
   line-height: 1.3em;
+}
+.infosFiche .description li {
+  background-image: url('../img/check.png');
+  background-repeat: no-repeat;
+  padding-left: 1.5em;
+  background-size: 15px;
+}
+.infosFiche .ajoutPanier {
+  font-size: 1.4em;
+  background-size: 47px;
+  top: 0em;
+}
+.voirPlus {
+  color: #68913a;
+  font-family: 'ComfortaaRegular';
+  font-size: 1.3em;
+  float: right;
+  border-bottom: 1px solid #68913a;
+  margin-top: 1em;
+}
+.voirPlus:hover {
+  color: #12320c;
+  border-bottom: 1px solid #12320c;
+}
+.accessoire {
+  color: #68913a;
+  font-family: 'ComfortaaThin';
+  font-size: 1.1em;
+  float: right;
+  border-bottom: 1px solid #68913a;
+  margin-top: 1em;
+}
+.accessoire:hover {
+  color: #12320c;
+  border-bottom: 1px solid #12320c;
 }
 .details {
   width: 23.3em;
@@ -625,6 +673,9 @@ nav h3 {
 .produit .ajoutPanier img {
   width: 15em;
   height: auto;
+}
+#quantite {
+  width: 3em;
 }
 /*--------FIN FICHE PRODUIT-------*/
 /*--------FIN CONTENT-------*/

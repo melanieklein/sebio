@@ -27,4 +27,14 @@
   });
 });
 
+	$('#plus').hide();
+	$('.voirPlus').click(function(){
+		$('#plus').show();
+		$('.voirPlus').hide();
+	});
+
+	$('.ajoutPanier').click(function(){
+		$('#imgPanier').css('background-image',"url('img/panierRempli.png')");
+	});
+
 })(jQuery);

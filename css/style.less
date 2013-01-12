@@ -293,6 +293,10 @@ nav {
 		background-size:auto 54px;
 		background-position: center center;
 	}
+
+	ul {
+		position:relative;
+	}
 }
 
 .lienNav {
@@ -328,12 +332,13 @@ nav {
 .dropdown {
 	background-color: @beige;
 	position: absolute;
-	top:22.3em;
+	top:5.8em;
 	border-radius:10px;
 	text-align: left;
 	padding: 1em;
 	width:49em;
-	right: 13.07em;
+	right:0em;
+	z-index: 1;
 
 	>ul {
 		font-size:0.8em;
@@ -563,7 +568,7 @@ nav {
 	}
 }
 
-.prix price {
+.prix {
 	background-color: @beige;
 	display:inline-block;
 	height: 55px;
@@ -587,14 +592,26 @@ nav {
 	float: right;
 	position: relative;
 	top:1.5em;
+	font-family: @comfortaaR;
+	background-color: @vert;
+	border-radius: 5px 5px 5px 5px;
+	padding: 0.7em 0.7em 0.7em 2.7em;
+	background-image: url('../img/ajoutPanier.png');
+	background-repeat: no-repeat;
+	background-size: 34px;
+	color: @beige;
+	&:hover {
+		background-image:url('../img/ajoutPanierHover.png');
+	}
 }
 
 .voirTout {
 	float:right;
 	color: @vert;
 	border-bottom: 1px solid @vert;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	margin-top: 0.5em;
+	font-family: @comfortaaR;
 
 	&:hover {
 		color: @vertFonce;
@@ -706,8 +723,6 @@ nav {
 }
 
 .infosFiche {
-	float: left;
-	width: 39.41em;
 
 	.fn {		
 		font-family: @comfortaaR;		
@@ -724,8 +739,9 @@ nav {
 	.prixProduit {
 		display: block;
 		font-family: @comfortaaR;
-		font-size: 2.3em;
+		font-size: 1.8em;
 		color: @vertFonce;
+		clear: right;
 	}
 
 	.description {
@@ -733,8 +749,50 @@ nav {
 		font-size: 1.1em;
 		font-family: @comfortaaR;
 		line-height: 1.3em;
+
+		li {
+			background-image: url('../img/check.png');
+			background-repeat: no-repeat;
+			padding-left: 1.5em;
+			background-size: 15px;
+		}
+	}
+
+	.ajoutPanier {
+		font-size: 1.4em;
+		background-size: 47px;
+		top: 0em;
 	}
 }
+
+.voirPlus {
+	color: @vert;
+	font-family: @comfortaaR;
+	font-size: 1.3em;
+	float: right;
+	border-bottom: 1px solid @vert;
+	margin-top: 1em;
+	&:hover {
+		color: @vertFonce;
+		border-bottom: 1px solid @vertFonce;
+	}
+
+}
+
+.accessoire {
+	color: @vert;
+	font-family: @comfortaaT;
+	font-size: 1.1em;
+	float: right;
+	border-bottom: 1px solid @vert;
+	margin-top: 1em;
+	&:hover {
+		color: @vertFonce;
+		border-bottom: 1px solid @vertFonce;
+	}
+}
+
+
 
 .details {
 
@@ -759,6 +817,10 @@ nav {
 .produit .ajoutPanier img {
 	width: 15em;
 	height:auto;
+}
+
+#quantite {
+	width: 3em;
 }
 
 /*--------FIN FICHE PRODUIT-------*/
