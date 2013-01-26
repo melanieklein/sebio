@@ -41,6 +41,28 @@ a {
   width: 63.75em;
   margin: auto;
 }
+.lien {
+  color: #68913a;
+  text-decoration: underline;
+}
+.lien:hover {
+  color: #12320c;
+  border-color: #12320c;
+}
+.grandTitre {
+  color: #68913a;
+  font-family: 'ComfortaaRegular';
+  border-bottom: 1px solid #68913a;
+  padding-bottom: 0.4em;
+  font-size: 1.4em;
+  display: block;
+  width: 19em;
+  text-transform: uppercase;
+}
+.grandTitre:hover {
+  color: #12320c;
+  border-color: #12320c;
+}
 body {
   background-image: url('../img/site/motif5.png');
   background-repeat: repeat;
@@ -239,7 +261,7 @@ nav ul {
   background-color: #68913a;
   border-radius: 10px;
   display: inline-block;
-  width: 5.5352em;
+  width: 5.53em;
   padding-bottom: 1em;
   text-align: center;
   margin-right: 0.395em;
@@ -399,22 +421,6 @@ nav ul {
   margin-top: 2.5em;
   margin-bottom: 3em;
 }
-#nouveauxArt h2 a,
-#promosArt h2 a {
-  color: #68913a;
-  font-family: 'ComfortaaRegular';
-  border-bottom: 1px solid #68913a;
-  padding-bottom: 0.4em;
-  font-size: 1.4em;
-  display: block;
-  width: 19em;
-  text-transform: uppercase;
-}
-#nouveauxArt h2 a:hover,
-#promosArt h2 a:hover {
-  color: #12320c;
-  border-color: #12320c;
-}
 #nouveauxArt h2 + div,
 #promosArt h2 + div {
   margin-top: 3em;
@@ -492,15 +498,9 @@ nav ul {
 }
 .voirTout {
   float: right;
-  color: #68913a;
-  border-bottom: 1px solid #68913a;
   font-size: 1.3em;
   margin-top: 0.5em;
   font-family: 'ComfortaaRegular';
-}
-.voirTout:hover {
-  color: #12320c;
-  border-color: #12320c;
 }
 /*--------INSCRIPTION-------*/
 #conteneurIns {
@@ -596,6 +596,9 @@ nav ul {
 .imagesFiche img {
   width: 23.3em;
 }
+.infosFiche {
+  margin-bottom: 3em;
+}
 .infosFiche .fn {
   font-family: 'ComfortaaRegular';
   font-size: 2.3em;
@@ -630,29 +633,46 @@ nav ul {
   background-size: 47px;
   top: 0em;
 }
+.infosFiche .ajoutAchats {
+  background-image: url('../img/listeAchats.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  font-size: 1.3em;
+  padding: 0.5em 0em 0.5em 2em;
+  background-position: 0px 5px;
+}
+.infosFiche .recommander {
+  font-size: 1.3em;
+  background-image: url('../img/recommander.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding: 0.5em 0em 0.5em 2em;
+  background-position: 0px 5px;
+}
+.articlesSimilaires ul {
+  margin-top: 1em;
+}
+.articlesSimilaires li {
+  display: inline;
+  margin: 0em 0.565em 0em 0.565em;
+}
+.articlesSimilaires li:last-child {
+  margin-right: 0em;
+}
+.articlesSimilaires li:first-child {
+  margin-left: 0em;
+}
 .voirPlus {
-  color: #68913a;
   font-family: 'ComfortaaRegular';
   font-size: 1.3em;
   float: right;
-  border-bottom: 1px solid #68913a;
   margin-top: 1em;
 }
-.voirPlus:hover {
-  color: #12320c;
-  border-bottom: 1px solid #12320c;
-}
 .accessoire {
-  color: #68913a;
   font-family: 'ComfortaaThin';
   font-size: 1.1em;
   float: right;
-  border-bottom: 1px solid #68913a;
   margin-top: 1em;
-}
-.accessoire:hover {
-  color: #12320c;
-  border-bottom: 1px solid #12320c;
 }
 .details {
   width: 23.3em;

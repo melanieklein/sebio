@@ -72,6 +72,31 @@ a {
 	margin: auto;
 }
 
+.lien {
+	color: @vert;
+	text-decoration: underline;
+	&:hover {
+		color: @vertFonce;
+		border-color: @vertFonce;
+	}
+}
+
+.grandTitre {
+	color: @vert;
+	font-family: @comfortaaR;
+	border-bottom: 1px solid @vert;
+	padding-bottom: 0.4em;
+	font-size:1.4em;
+	display:block;
+	width: 19em;
+	text-transform: uppercase;
+
+	&:hover {
+		color: @vertFonce;
+		border-color: @vertFonce;
+	}
+}
+
 body{
 	background-image: url('../img/site/motif5.png');
 	background-repeat: repeat;
@@ -306,7 +331,7 @@ nav {
 	border-radius: 10px;
 
 	display: inline-block;
-	width: 5.5352em;
+	width: 5.53em;
 	padding-bottom: 1em;
 	text-align: center;
 	margin-right:0.395em;
@@ -510,22 +535,6 @@ nav {
 	margin-top: 2.5em;
 	margin-bottom: 3em;
 
-	h2 a {
-		color: @vert;
-		font-family: @comfortaaR;
-		border-bottom: 1px solid @vert;
-		padding-bottom: 0.4em;
-		font-size:1.4em;
-		display:block;
-		width: 19em;
-		text-transform: uppercase;
-
-		&:hover {
-			color: @vertFonce;
-			border-color: @vertFonce;
-		}
-	}
-
 	h2+div {
 		margin-top: 3em;
 	}
@@ -607,16 +616,10 @@ nav {
 
 .voirTout {
 	float:right;
-	color: @vert;
-	border-bottom: 1px solid @vert;
 	font-size: 1.3em;
 	margin-top: 0.5em;
 	font-family: @comfortaaR;
 
-	&:hover {
-		color: @vertFonce;
-		border-color: @vertFonce;
-	}
 }
 
 /*--------INSCRIPTION-------*/
@@ -724,6 +727,8 @@ nav {
 
 .infosFiche {
 
+	margin-bottom: 3em;
+
 	.fn {		
 		font-family: @comfortaaR;		
 		font-size: 2.3em;		
@@ -763,33 +768,60 @@ nav {
 		background-size: 47px;
 		top: 0em;
 	}
+
+	.ajoutAchats {
+		background-image: url('../img/listeAchats.png');
+		background-repeat: no-repeat;
+		background-size: 30px;
+        font-size: 1.3em;
+        padding: 0.5em 0em 0.5em 2em;
+		background-position: 0px 5px;
+}
+	
+
+	.recommander {
+		font-size: 1.3em;
+		background-image: url('../img/recommander.png');
+		background-repeat: no-repeat;
+		background-size: 30px;
+		padding: 0.5em 0em 0.5em 2em;
+		background-position: 0px 5px;
+	}
+}
+
+.articlesSimilaires {
+
+ul {
+	margin-top: 1em;
+}
+
+
+li {
+	display: inline;
+	margin: 0em 0.565em 0em 0.565em;
+
+	&:last-child {
+		margin-right: 0em;
+	}
+
+	&:first-child {
+		margin-left: 0em;
+	}
+}
 }
 
 .voirPlus {
-	color: @vert;
 	font-family: @comfortaaR;
 	font-size: 1.3em;
 	float: right;
-	border-bottom: 1px solid @vert;
 	margin-top: 1em;
-	&:hover {
-		color: @vertFonce;
-		border-bottom: 1px solid @vertFonce;
-	}
-
 }
 
 .accessoire {
-	color: @vert;
 	font-family: @comfortaaT;
 	font-size: 1.1em;
 	float: right;
-	border-bottom: 1px solid @vert;
 	margin-top: 1em;
-	&:hover {
-		color: @vertFonce;
-		border-bottom: 1px solid @vertFonce;
-	}
 }
 
 
