@@ -5,7 +5,7 @@
 <!--[if lt IE 9]>
 <script src="dist/html5shiv.js"></script>
 <![endif]-->
-<html lang="en-US">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
 	<title>SeBio - Produits naturels, bio et écologiques pour toute la famille&nbsp;!</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-<body>
+<body id="categorie2">
 	<h1 class="outliner">Site de SeBio - Produits naturels, bio et écologiques pour toute la famille&nbsp;!</h1>
 	<header class="centrer">
 		<div id="logoIntro">
@@ -75,7 +75,7 @@
 
 			</div>
 		</div>
-<nav>
+				<nav>
 		<h1 class="outliner">Menu de navigation</h1>
 		<ul>		
 			<li id="hygiene" class="lienNav"><a href="#">				
@@ -505,7 +505,6 @@
 			</li>
 		</ul>
 		</nav>
-
 		
 	</header>
 	<div id="content">					
@@ -515,130 +514,243 @@
 				<p>1 seul article acheté&nbsp;? 1€ de frais d'envoi&nbsp;!</p>
 				<p>Conseils personnels, aucun e-mail types</p>
 			</div>		
-			<section id="conteneurIns" class="centrer">
-				<div id="inscription">
-				<h1>Créez votre compte</h1>
-				<form action="#" id="formIns">
-					<fieldset>
-						<h3>Vos paramètres de connexion</h3>				
-						<p><label for="email">Votre e-mail</label>
-						<input type="email" id="email"></p>
-						<p><label for="mdp">Créez votre mot de passe</label>
-						<input type="password" id="mdp"></p>
-						<p><label for="mdp2">Confirmez votre mot de passe</label>
-						<input type="password" id="mdp2"></p>
-					</fieldset>
-					<fieldset>
-						<h3>Vos coordonnées</h3>
-						<p><label for="tva">N° de TVA</label>
-						<input type="text" id="tva"></p>
-						<p>
-							<label for="genre">Genre</label>
-							<select name="genre" id="genre">
-								<option value="Homme">Homme</option>
-								<option value="Femme">Femme</option>
-							</select>
-						</p>
-						<p>
-							<label for="civ">Civilité</label>
-							<select name="civ" id="civ">
-								<option value="Monsieur">M.</option>
-								<option value="Madame">Mme</option>
-								<option value="Mademoiselle">Mlle</option>
-							</select>
-						</p>
-						<p><label for="prenom">Prénom</label>
-						<input type="text" id="prenom"></p>
-						<p><label for="nom">Nom</label>
-						<input type="text" id="nom"></p>						
-						<p><label for="adr">Adresse</label>
-						<input type="text" id="adr"></p>
-						<p><label for="codeP">Code postal</label>
-						<input type="text" id="codeP">	</p>
-						<p><label for="ville">Ville</label>
-						<input type="text" id="ville"></p>
-						<p><label for="pays"></label>						
-						<select name="pays" id="pays">                  
-		                  <option data-abbr="BE" value="56" selected="selected">Belgique / België (Belgium)</option>		                
-		                  <option data-abbr="FR" value="250">France</option>		                  
-		                  <option data-abbr="CZ" value="203">Česká republika (Czech Republic)</option>		                  
-		                  <option data-abbr="CY" value="196">Cyprus</option>		                  
-		                  <option data-abbr="DK" value="208">Danmark (Denmark)</option>		                  
-		                  <option data-abbr="DE" value="276">Deutschland (Germany)</option>		                  
-		                  <option data-abbr="AF" value="4">Afghanistan</option>		                  
-		                  <option data-abbr="GR" value="300">Ελλάδα (Greece)</option>		                  
-		                  <option data-abbr="ES" value="724">España (Spain)</option>		                  
-		                  <option data-abbr="IE" value="372">Ireland</option>		                  
-		                  <option data-abbr="IT" value="380">Italia (Italy)</option>		                  
-		                  <option data-abbr="LV" value="428">Latvija (Latvia)</option>		                  
-		                  <option data-abbr="LT" value="440">Lietuva (Lithuania)</option>		                  
-		                  <option data-abbr="LU" value="442">Luxembourg</option>		                  
-		                  <option data-abbr="HU" value="348">Magyarország (Hungary)</option>		                  
-		                  <option data-abbr="MT" value="470">Malta</option>		                  
-		                  <option data-abbr="NL" value="528">Nederland (Netherlands)</option>		                  
-		                  <option data-abbr="AT" value="40">Österreich (Austria)</option>		                  
-		                  <option data-abbr="PL" value="616">Polska (Poland)</option>		                  
-		                  <option data-abbr="PT" value="620">Portugal</option>		                 
-		                  <option data-abbr="CH" value="756">Suisse / Schweiz (Switzerland)</option>		                  
-		                  <option data-abbr="SI" value="705">Slovenija (Slovenia)</option>		                  
-		                  <option data-abbr="SK" value="703">Slovenská republika (Slovakia)</option>		                  
-		                  <option data-abbr="FI" value="246">Suomi (Finland)</option>		                  
-		                  <option data-abbr="SE" value="752">Sverige (Sweden)</option>		                  
-		                  <option data-abbr="GB" value="826">United Kingdom</option>		                  
-		                  <option data-abbr="US" value="840">United States</option>		                  
-		                  <option data-abbr="BO" value="68">Bolivia</option>		                  
-		                  <option data-abbr="GA" value="266">Gabon</option>		                  
-		                  <option data-abbr="ZR" value="180">Congo, Democratic Republic of the</option>		                  
-		                  <option data-abbr="SN" value="686">Senegal</option>		                  
-		                  <option data-abbr="MY" value="458">Malaysia</option>		                  
-		                  <option data-abbr="ML" value="466">Mali</option>		                  
-		                  <option data-abbr="RU" value="643">Россия (Russian Federation)</option>		                  
-		                  <option data-abbr="KE" value="404">Keeniyaa (Kenya)</option>		                  
-		                  <option data-abbr="JP" value="392">日本 (Japan)</option>		                  
-		                  <option data-abbr="CA" value="124">Canada</option>		                  
-		                  <option data-abbr="TR" value="792">Türkiye (Turkey)</option>		                  
-		                  <option data-abbr="MF" value="663">Saint-Martin</option>
-						</select></p>
-						<p><label for="telD">Téléphone domicile</label>
-						<input type="tel" id="telD"></p>
-						<p><label for="telP">Téléphone portable</label>
-						<input type="tel" id="telP"></p>	
-									
-					</fieldset>
-					<fieldset>
-						<h3>Informations supplémentaires</h3>
-						<p>Souhaitez-vous recevoir notre bulletin d'information&nbsp;? Vous pouvez annuler votre inscription au bulletin d'information à tout moment.</p>
-						<p><label for="news">Newsletter mensuelle</label>
-						<input type="checkbox" id="news"></p>						
-						<p>
-							<label for="infoSup">Comment avez-vous connu SeBio&nbsp;?</label>
-							<select name="infoSup" id="infoSup">
-								<option value="105359">Par un ami/connaissance</option>      
-						        <option value="105360">Recherche sur Google</option>						      
-						        <option value="105361">Recherche sur Yahoo</option>						      
-						        <option value="105620">Recherche sur un autre moteur/site</option>						      
-						        <option value="105362">En passant devant notre show-room</option>						      
-						        <option value="5880567">Par le Guide du Bruxelles Vert</option>						      
-						        <option value="105364">Pub dans le magasine Bio Info</option>						      
-						        <option value="105365">Pub dans le magasine/site Grandir Autrement</option>						      
-						        <option value="105363">Site d'achat Kelkoo</option>						      
-						        <option value="105809">Site d'achat Vitalprix</option>						      
-						        <option value="105807">Site d'achat Le Guide</option>						      
-						        <option value="105810">Site d'achat Beauté-Test</option>
-							</select>
-						</p>						
-					</fieldset>
-					<p>Politique de confidentialité&nbsp;: Aucune information personnelle ne sera communiquée à des tiers sans votre consentement explicite. Nous, (SeBIO S.P.R.L.), collectons vos données sur ce formulaire pour traiter votre commande, ce qui ne sera pas possible si vous ne nous communiquez pas les renseignements demandés. Vous bénéficiez d'un droit d'accès, de rectification et d'opposition au traitement des données vous concernant.</p>
-					<button type="submit">Valider</button>
-				</form>
-				</div>
+		<section class="produit centrer">
+			<div class="breadcrumb"><a class="lien" href="#">Hygiène</a> > <a class="lien" href="#">Déodorants</a></div>
+			<div id="grandeCategorie">
+				<header>
+					<div class="imgCategorie"><img src="img/categories/deo150.png" alt="Catégorie déodorants" width="57"></div>
+					<div id="infoGrandeCategorie">
+						<h3>Déodorants</h3>
+						<p>De la pierre d'alun 100% minérale aux déodorants plus classiques mais entièrement naturels...</p>
+					</div>
+				</header>
+				<ul>
+					<li class="choix"><a href="grandeCategorie.html">Déodorants bille</a></li>
+					<li class="choix"><a href="grandeCategorie2.html">Déodorants spray</a></li>
+					<li class="choix"><a href="grandeCategorie2.html">Pierre d'Alun</a></li>
+				</ul>
+				<ul>				
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo6.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à l'Aloe Vera (Urtekram)</h3>
+						
+					</a>
 
-				<div id="infosPaiement">
-					<h1>100% sécurisé&nbsp;:</h1>
-					<img src="img/paiement.png" alt="Crédit mutuel paiement sécurisé - visa - mastercard - cb - paypal">
-				</div>
-			</section>
-		
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>11,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo7.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+		   			<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>7,30€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo8.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys) - RECHARGE</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,90€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo9.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant Crystal Lime (Urtekram)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>	
+				
+			
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo6.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à l'Aloe Vera (Urtekram)</h3>
+						
+					</a>
+
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>11,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo7.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+		   			<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>7,30€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo8.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys) - RECHARGE</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,90€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo9.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant Crystal Lime (Urtekram)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>	
+
+								<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo6.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à l'Aloe Vera (Urtekram)</h3>
+						
+					</a>
+
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>11,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo7.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+		   			<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>7,30€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo8.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys) - RECHARGE</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,90€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo9.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant Crystal Lime (Urtekram)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>	
+
+								<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo6.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à l'Aloe Vera (Urtekram)</h3>
+						
+					</a>
+
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>11,80€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo7.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+		   			<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>7,30€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo8.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant à bille à l'huile d'Amande Douce BIO (CosLys) - RECHARGE</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>
+				<li itemscope itemtype="http://schema.org/Product" class="produitsCat hproduct">
+					<a href="fiche.html" title="Voir les détails du produit">
+						<div itemprop="price" class="prix price">
+							<span>6,90€</span>
+						</div>
+						<img itemprop="image" width="193" class="photo" src="img/categories/produits/deo9.png" alt="Image de l'article Bouteille d'eau filtrante">
+						<h3 itemprop="name" class="fn">Déodorant Crystal Lime (Urtekram)</h3>
+						
+					</a>
+					<a href="#" class="ajoutPanier" title="Ajouter au panier">
+						Ajouter au panier
+					</a>
+				</li>	
+				</ul>
+
+
+
+
+			</div>
+					
+			
+		</section>	
 
 	</div>
 	<footer>

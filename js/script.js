@@ -1,40 +1,82 @@
-(function($){
+( function ( $ ) {
+	"use strict";
 
-	$(window).load(function() {
+	//Global vars
 
+	//methods
+	var resizeImg = function(){
 	  		var images = $('.retina');
-
-	    	images.each(function(i) {
-
+	    	images.each(function(i){
 	     	$(this).width($(this).width() / 2);
 	    	});
+	};
 
-	});
+	var dropdown = function(){
+		$('.lienNav').hoverIntent( 
+			function(){
+				$('.dropdown', this).show();
+			},
+			function(){
+				$('.dropdown', this).hide();
+			}
+		);
+	};
 
-	$('.dropdown').hide();
-	$('.lienNav').hoverIntent( 
-		function(){
-			$('.dropdown', this).show();
-		},
-		function(){
-			$('.dropdown', this).hide();
-		});
-		
-	$(function() {
-  		$('#hautPage a').click(function(){
+	var topPage = function(e){
    	 	$('html,body').animate({scrollTop:0}, 'slow');
-    return false;
-  });
-});
+    	return false;
+	};
 
-	$('#plus').hide();
-	$('.voirPlus').click(function(){
+
+	var seeMore = function(e){
 		$('#plus').show();
 		$('.voirPlus').hide();
-	});
+	};
 
-	$('.ajoutPanier').click(function(){
+	var changeImg = function(e){
 		$('#imgPanier').css('background-image',"url('img/panierRempli.png')");
+	};
+
+	var connexion = function(e){
+		$('#clicConnecter').slideDown();
+ 	};
+
+
+ 	var autocompletion = function(){
+	    var availableTags = [
+	      "Hygiène",
+	      "Déodorants",
+	      "Livres",
+	      "Bébé",
+	      "Déodorant à l'Aloe Vera",
+	      "Bouteille d'eau filtrante",
+	      "Clojure",
+	      "Semelles pour chausson",
+	      "Couverture de pluie",
+	      "Gel douche",
+	      "Beurre de karité",
+	      "Bougie de massage",
+	      "Crème confort visage",
+	      "Couches lavables"
+	    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  };
+
+
+  	$(function(){
+  	//Routines
+	resizeImg();
+	$('.dropdown').hide();
+	dropdown();
+	$('#hautPage a').on('click', topPage);
+	$('#plus').hide();
+	$('.voirPlus').on('click', seeMore);
+	$('.ajoutPanier').on('click', changeImg);
+	$('#clicConnecter').hide();
+	$('.seConnecter').on('click', connexion);
+	autocompletion;
 	});
 
 })(jQuery);

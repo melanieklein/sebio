@@ -9,6 +9,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
 	<title>SeBio - Produits naturels, bio et écologiques pour toute la famille&nbsp;!</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
 </head>
@@ -24,24 +25,35 @@
 					<li class="preMenu"><a href="#">Liquidation</a></li>					
 				</ul>
 			</div>
-			<section id="panierLogin">
+						<section id="panierLogin">
 			<h1 class="outliner">Votre espace perso</h1>
-			<div id="panier">
-				<div id="imgPanier">
-				<a href="#">
-					
-				</a>
-			</div>
-				<div id="infosPanier">
-					<ul>
-					<li><a href="#">0 ARTICLE</a></li>
-					<li><a href="#">0 €</a></li>
-				</ul>
+				<a href="panier.html">
+				<div id="panier">
+					<div id="imgPanier">
+					</div>
+					<div id="infosPanier">
+						<ul>
+						<li>0 ARTICLE</li>
+						<li>0 €</li>
+					</ul>
+					</div>
 				</div>
-			</div>
+				</a> 
 			<div id="login">
 				<ul>
-					<li><a href="#" class="lien">Se connecter</a><span> /</span></li> 
+					<li><a href="#" class="lien seConnecter">Se connecter</a><div id="clicConnecter">
+							<form action="#">
+								<label for="emailC">Email&nbsp;:
+									<input type="email" id="emailC">
+								</label>
+								<label for="mdpC">Mot de passe&nbsp;:
+									<input type="password" id="mdpC">
+								</label>
+								<button>Connexion</button>
+							</form>
+						</div><span>
+
+					 /</span></li> 
 					<li><a href="inscription.html" class="lien">S'inscrire</a>
 						<p>Enregistrez-vous et recevez 5% de remise sur votre 1ère commande&nbsp;!</p></li>
 				</ul>
@@ -50,16 +62,21 @@
 		</div>
 		<div id="accueilRecherche">
 			<div id="imgAccueil">
-			<a href="index.html"><img class="retina" src="img/accueil.png" alt="Retour à l'accueil" title="Accueil"></a>
+				<a href="index.html"><img class="retina" src="img/accueil.png" alt="Retour à l'accueil" title="Accueil"></a>
 			</div>
-			<div id="recherche">				
-				<form action="#" method="post">
-					<input type="text">
-					<button type="submit" name="Go" title="Lancer la recherche">Go</button>
-				</form>
+			<div id="recherche">	
+			<form action="#" method="post">
+			<div class="ui-widget">
+			  <label for="tags"></label>
+			  <input id="tags" type="text" />
+			  <button type="submit" name="Go" title="Lancer la recherche">Go</button>
+			</div>
+			</form>
+
 			</div>
 		</div>
-				<nav>
+				
+		<nav>
 		<h1 class="outliner">Menu de navigation</h1>
 		<ul>		
 			<li id="hygiene" class="lienNav"><a href="#">				
@@ -68,92 +85,88 @@
 				<div class="dropdown">
 					<ul>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Déodorants</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Déodorants</a>
 							<ul>
-								<li><a href="">Billes</a></li>
-								<li><a href="">Spray</a></li>
-								<li><a href="">Pierre d'alun</a></li>
+								<li><a href="grandeCategorie.html">Billes</a></li>
+								<li><a href="grandeCategorie2.html">Spray</a></li>
+								<li><a href="grandeCategorie.html">Pierre d'alun</a></li>
 							</ul>							
-							<a class="titreCategorie" href="#">Produits solaires</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Produits solaires</a>
 							<ul>
-								<li><a href="">Protection solaire</a></li>
-								<li><a href="">Après soleil</a></li>
-								<li><a href="">Autobronzant</a></li>
+								<li><a href="grandeCategorie.html">Protection solaire</a></li>
+								<li><a href="grandeCategorie.html">Après soleil</a></li>
+								<li><a href="grandeCategorie.html">Autobronzant</a></li>
 							</ul>
-							<a class="titreCategorie" href="#">Maquillage</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Maquillage</a>
 							<ul>
-								<li><a href="">Lèvres</a></li>
-								<li><a href="">Crèmes teintées visage</a></li>
-								<li><a href="">Yeux</a></li>
-								<li><a href="">Vernis à ongles</a></li>
+								<li><a href="grandeCategorie.html">Lèvres</a></li>
+								<li><a href="grandeCategorie.html">Crèmes teintées visage</a></li>
+								<li><a href="grandeCategorie.html">Yeux</a></li>
+								<li><a href="grandeCategorie.html">Vernis à ongles</a></li>
 							</ul>
-							<a class="titreCategorie" href="#">Soins pour homme</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Soins pour homme</a>
 							<ul>
-								<li><a href="">Visage et corps</a></li>
-								<li><a href="">Gel douche</a></li>
-								<li><a href="">Rasage</a></li>
+								<li><a href="grandeCategorie.html">Visage et corps</a></li>
+								<li><a href="grandeCategorie.html">Gel douche</a></li>
+								<li><a href="grandeCategorie.html">Rasage</a></li>
 							</ul>
 							
 						</li>
 
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Soins du visage</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Soins du visage</a>
 							<ul>
-								<li><a href="">Produits de base</a></li>
-								<li><a href="">Tonique et lotion</a></li>
-								<li><a href="">Soin de jour</a></li>
-								<li><a href="">Masque et baume</a></li>
-								<li><a href="">Peaux jeunes</a></li>
-								<li><a href="">Coffrets et découverte</a></li>
-								<li><a href="">Nettoyant et démaquillant</a></li>
-								<li><a href="">Contours yeux et lèvres</a></li>
-								<li><a href="">Soin de nuit</a></li>
-								<li><a href="">Baume à lèvres</a></li>
-								<li><a href="">Peaux matures</a></li>
-							
-							<li><a class="titreCategorie" href="#">Eaux de toilette</a></li>
-
-							<li><a class="titreCategorie" href="#">Soins dentaires</a></li>
-
-							<li><a class="titreCategorie" href="#">Eaux florales</a></li>
-						</ul>
-							
+								<li><a href="grandeCategorie.html">Produits de base</a></li>
+								<li><a href="grandeCategorie.html">Tonique et lotion</a></li>
+								<li><a href="grandeCategorie.html">Soin de jour</a></li>
+								<li><a href="grandeCategorie.html">Masque et baume</a></li>
+								<li><a href="grandeCategorie.html">Peaux jeunes</a></li>
+								<li><a href="grandeCategorie.html">Coffrets et découverte</a></li>
+								<li><a href="grandeCategorie.html">Nettoyant et démaquillant</a></li>
+								<li><a href="grandeCategorie.html">Contours yeux et lèvres</a></li>
+								<li><a href="grandeCategorie.html">Soin de nuit</a></li>
+								<li><a href="grandeCategorie.html">Baume à lèvres</a></li>
+								<li><a href="grandeCategorie.html">Peaux matures</a></li>							
+							</ul>
+								<a class="titreCategorie" href="grandeCategorie.html">Eaux de toilette</a>
+								<a class="titreCategorie" href="grandeCategorie.html">Soins dentaires</a>
+								<a class="titreCategorie" href="grandeCategorie.html">Eaux florales</a>							
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Soins capillaires</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Soins capillaires</a>
 							<ul>
-								<li><a href="">Shampoing</a></li>
-								<li><a href="">Après-shampoing et soin</a></li>
-								<li><a href="">Spray et gel</a></li>
-								<li><a href="">Brosses et peignes</a></li>
-								<li><a href="">Henné</a></li>
+								<li><a href="grandeCategorie.html">Shampoing</a></li>
+								<li><a href="grandeCategorie.html">Après-shampoing et soin</a></li>
+								<li><a href="grandeCategorie.html">Spray et gel</a></li>
+								<li><a href="grandeCategorie.html">Brosses et peignes</a></li>
+								<li><a href="grandeCategorie.html">Henné</a></li>
 							</ul>
-							<a class="titreCategorie" href="#">Soins du corps</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Soins du corps</a>
 							<ul>
-								<li><a href="">Lait et crème</a></li>
-								<li><a href="">Huiles</a></li>
-								<li><a href="">Gommage</a></li>
-								<li><a href="">Soin mains et pieds</a></li>
-								<li><a href="">Epilation</a></li>
-								<li><a href="">Soin hammam</a></li>
-								<li><a href="">Minceur</a></li>
+								<li><a href="grandeCategorie.html">Lait et crème</a></li>
+								<li><a href="grandeCategorie.html">Huiles</a></li>
+								<li><a href="grandeCategorie.html">Gommage</a></li>
+								<li><a href="grandeCategorie.html">Soin mains et pieds</a></li>
+								<li><a href="grandeCategorie.html">Epilation</a></li>
+								<li><a href="grandeCategorie.html">Soin hammam</a></li>
+								<li><a href="grandeCategorie.html">Minceur</a></li>
 							</ul>
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Douche et bain</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Douche et bain</a>
 							<ul>
-								<li><a href="">Savons</a></li>
-								<li><a href="">Gel douche</a></li>
-								<li><a href="">Bain</a></li>
+								<li><a href="grandeCategorie.html">Savons</a></li>
+								<li><a href="grandeCategorie.html">Gel douche</a></li>
+								<li><a href="grandeCategorie.html">Bain</a></li>
 							</ul>
-							<a class="titreCategorie" href="#">Hygiène intime</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Hygiène intime</a>
 							<ul>
-								<li><a href="">Serviettes et protège slips</a></li>
-								<li><a href="">Tampons</a></li>
-								<li><a href="">Serviettes lavables</a></li>
-								<li><a href="">Coupes menstruelles</a></li>
-								<li><a href="">Hygiène</a></li>
-								<li><a href="">Préservatifs et lubrifiants</a></li>
+								<li><a href="grandeCategorie.html">Serviettes et protège slips</a></li>
+								<li><a href="grandeCategorie.html">Tampons</a></li>
+								<li><a href="grandeCategorie.html">Serviettes lavables</a></li>
+								<li><a href="grandeCategorie.html">Coupes menstruelles</a></li>
+								<li><a href="grandeCategorie.html">Hygiène</a></li>
+								<li><a href="grandeCategorie.html">Préservatifs et lubrifiants</a></li>
 							</ul>							
 						</li>									
 					</ul>
@@ -165,68 +178,68 @@
 				<div class="dropdown">
 					<ul>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Aromathérapie</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Aromathérapie</a>
 							<ul>
-								<li><a href="">Huiles essentielles</a></li>
-								<li><a href="">Huiles végétales</a></li>
-								<li><a href="">Diffuseurs, synergies et bougies</a></li>
-								<li><a href="">PranaBB</a></li>
-								<li><a href="">Livres</a></li>
-								<li><a href="">Préparations (capsules, ampoules, gels...)</a></li>
-								<li><a href="">FémiNaissance</a></li>
-								<li><a href="">Accessoires et supports</a></li>
-								<li><a href="">Cosmétiques</a></li>
+								<li><a href="grandeCategorie.html">Huiles essentielles</a></li>
+								<li><a href="grandeCategorie.html">Huiles végétales</a></li>
+								<li><a href="grandeCategorie.html">Diffuseurs, synergies et bougies</a></li>
+								<li><a href="grandeCategorie.html">PranaBB</a></li>
+								<li><a href="grandeCategorie.html">Livres</a></li>
+								<li><a href="grandeCategorie.html">Préparations (capsules, ampoules, gels...)</a></li>
+								<li><a href="grandeCategorie.html">FémiNaissance</a></li>
+								<li><a href="grandeCategorie.html">Accessoires et supports</a></li>
+								<li><a href="grandeCategorie.html">Cosmétiques</a></li>
 							</ul>							
-							<a class="titreCategorie" href="#">Fleurs de Bach</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Fleurs de Bach</a>
 							<ul>
-								<li><a href="">Rescue - remède d'urgence</a></li>
-								<li><a href="">Les 38 fleurs de Bach</a></li>
-								<li><a href="">Complexes en granules sans alcool</a></li>
-								<li><a href="">Livres</a></li>
+								<li><a href="grandeCategorie.html">Rescue - remède d'urgence</a></li>
+								<li><a href="grandeCategorie.html">Les 38 fleurs de Bach</a></li>
+								<li><a href="grandeCategorie.html">Complexes en granules sans alcool</a></li>
+								<li><a href="grandeCategorie.html">Livres</a></li>
 							</ul>
 						
 						</li>
 
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Compléments alimentaires</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Compléments alimentaires</a>
 							<ul>
-								<li><a href="">Immunité et résistance</a></li>
-								<li><a href="">Tonus et vitalité</a></li>
-								<li><a href="">Circulation et articulation</a></li>
-								<li><a href="">Système digestif et purification de l'organisme</a></li>
-								<li><a href="">Dermatologie</a></li>
-								<li><a href="">Système nerveux et sommeil</a></li>
-								<li><a href="">Mémoire, vue</a></li>
-								<li><a href="">Féminité</a></li>
-								<li><a href="">Homme</a></li>
+								<li><a href="grandeCategorie.html">Immunité et résistance</a></li>
+								<li><a href="grandeCategorie.html">Tonus et vitalité</a></li>
+								<li><a href="grandeCategorie.html">Circulation et articulation</a></li>
+								<li><a href="grandeCategorie.html">Système digestif et purification de l'organisme</a></li>
+								<li><a href="grandeCategorie.html">Dermatologie</a></li>
+								<li><a href="grandeCategorie.html">Système nerveux et sommeil</a></li>
+								<li><a href="grandeCategorie.html">Mémoire, vue</a></li>
+								<li><a href="grandeCategorie.html">Féminité</a></li>
+								<li><a href="grandeCategorie.html">Homme</a></li>
 							
-							<li><a class="titreCategorie" href="#">Spécial hiver</a></li>
-							<li><a class="titreCategorie" href="#">Argile</a></li>			
+							<li><a class="titreCategorie" href="grandeCategorie.html">Spécial hiver</a></li>
+							<li><a class="titreCategorie" href="grandeCategorie.html">Argile</a></li>			
 							</ul>
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Produits minceurs</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Produits minceurs</a>
 							<ul>
-								<li><a href="">Compléments alimentaires et jus</a></li>
-								<li><a href="">Huiles, crème et gels</a></li>
-								<li><a href="">Livres</a></li>
+								<li><a href="grandeCategorie.html">Compléments alimentaires et jus</a></li>
+								<li><a href="grandeCategorie.html">Huiles, crème et gels</a></li>
+								<li><a href="grandeCategorie.html">Livres</a></li>
 								
 							</ul>
-							<a class="titreCategorie" href="#">Soins d'urgence</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Soins d'urgence</a>
 							<ul>
-								<li><a href="">Stress, nervosité</a></li>
-								<li><a href="">Piqûres d'insectes</a></li>
-								<li><a href="">Rougeur, irritation</a></li>
-								<li><a href="">Bleus, bosses et coupures</a></li>
-								<li><a href="">Ennuis musculaires et articulatoires</a></li>
-								<li><a href="">Mal des transports et digestion</a></li>
-								<li><a href="">Désinfectant</a></li>
+								<li><a href="grandeCategorie.html">Stress, nervosité</a></li>
+								<li><a href="grandeCategorie.html">Piqûres d'insectes</a></li>
+								<li><a href="grandeCategorie.html">Rougeur, irritation</a></li>
+								<li><a href="grandeCategorie.html">Bleus, bosses et coupures</a></li>
+								<li><a href="grandeCategorie.html">Ennuis musculaires et articulatoires</a></li>
+								<li><a href="grandeCategorie.html">Mal des transports et digestion</a></li>
+								<li><a href="grandeCategorie.html">Désinfectant</a></li>
 							</ul>
 						</li>
 						<li class="colonne">
 							<ul>
-								<li><a class="titreCategorie" href="#">Masage</a></li>
-								<li><a class="titreCategorie" href="#">Bijoux bienfaisants</a></li>
+								<li><a class="titreCategorie" href="grandeCategorie.html">Masage</a></li>
+								<li><a class="titreCategorie" href="grandeCategorie.html">Bijoux bienfaisants</a></li>
 							</ul>
 						</li>									
 					</ul>
@@ -239,101 +252,101 @@
 				<div class="dropdown">
 					<ul>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Toilette</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Toilette</a>
 							<ul>
-								<li><a href="">Bain et shampooing</a></li>
-								<li><a href="">Soins corps et visage</a></li>
-								<li><a href="">Change</a></li>
-								<li><a href="">Dentifrice et brosse à dents</a></li>
-								<li><a href="">Accessoires</a></li>
-								<li><a href="">Petit pot et marche pieds</a></li>
+								<li><a href="grandeCategorie.html">Bain et shampooing</a></li>
+								<li><a href="grandeCategorie.html">Soins corps et visage</a></li>
+								<li><a href="grandeCategorie.html">Change</a></li>
+								<li><a href="grandeCategorie.html">Dentifrice et brosse à dents</a></li>
+								<li><a href="grandeCategorie.html">Accessoires</a></li>
+								<li><a href="grandeCategorie.html">Petit pot et marche pieds</a></li>
 							</ul>							
-							<a class="titreCategorie" href="#">Bien-être et santé</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Bien-être et santé</a>
 							<ul>
-								<li><a href="">Produits solairesPeau d'agneau</a></li>
-								<li><a href="">Poussées dentaires</a></li>
-								<li><a href="">Antimoustique</a></li>
-								<li><a href="">Les petits bobos</a></li>
-								<li><a href="">Compléments alimentaires</a></li>
-								<li><a href="">Massage</a></li>
+								<li><a href="grandeCategorie.html">Produits solairesPeau d'agneau</a></li>
+								<li><a href="grandeCategorie.html">Poussées dentaires</a></li>
+								<li><a href="grandeCategorie.html">Antimoustique</a></li>
+								<li><a href="grandeCategorie.html">Les petits bobos</a></li>
+								<li><a href="grandeCategorie.html">Compléments alimentaires</a></li>
+								<li><a href="grandeCategorie.html">Massage</a></li>
 							</ul>
-								<a class="titreCategorie" href="#">Couches</a>
+								<a class="titreCategorie" href="grandeCategorie.html">Couches</a>
 							<ul>
-								<li><a href="">Couches lavables</a></li>
-								<li><a href="">Couches jetables</a></li>
+								<li><a href="grandeCategorie.html">Couches lavables</a></li>
+								<li><a href="grandeCategorie.html">Couches jetables</a></li>
 							</ul>
 						
 						</li>
 
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Autour du sommeil</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Autour du sommeil</a>
 							<ul>
-								<li><a href="">Doudou et peluche musicale</a></li>
-								<li><a href="">Sac de couchage et couverture</a></li>
-								<li><a href="">Hamac et peau d'agneau</a></li>
-								<li><a href="">Aide au sommeil	</a></li>
+								<li><a href="grandeCategorie.html">Doudou et peluche musicale</a></li>
+								<li><a href="grandeCategorie.html">Sac de couchage et couverture</a></li>
+								<li><a href="grandeCategorie.html">Hamac et peau d'agneau</a></li>
+								<li><a href="grandeCategorie.html">Aide au sommeil	</a></li>
 							</ul>
-							<a class="titreCategorie" href="#">Alimentation bio</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Alimentation bio</a>
 							<ul>
-								<li><a href="">Laits infantiles</a></li>
-								<li><a href="">Céréales</a></li>
-								<li><a href="">Petits pots légumes</a></li>
-								<li><a href="">Petits pots fruits et desserts</a></li>
-								<li><a href="">Biscuits</a></li>
-								<li><a href="">Boissons, accessoires et ustensiles</a></li>						
+								<li><a href="grandeCategorie.html">Laits infantiles</a></li>
+								<li><a href="grandeCategorie.html">Céréales</a></li>
+								<li><a href="grandeCategorie.html">Petits pots légumes</a></li>
+								<li><a href="grandeCategorie.html">Petits pots fruits et desserts</a></li>
+								<li><a href="grandeCategorie.html">Biscuits</a></li>
+								<li><a href="grandeCategorie.html">Boissons, accessoires et ustensiles</a></li>						
 							</ul>	
-								<a class="titreCategorie" href="#">Allaitement</a>
+								<a class="titreCategorie" href="grandeCategorie.html">Allaitement</a>
 							<ul>
-								<li><a href="">Soin du mamelon</a></li>
-								<li><a href="">Accessoires et compléments alimentaires</a></li>
+								<li><a href="grandeCategorie.html">Soin du mamelon</a></li>
+								<li><a href="grandeCategorie.html">Accessoires et compléments alimentaires</a></li>
 
 							</ul>										
 							
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Portage</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Portage</a>
 							<ul>
-								<li><a href="">Minilou</a></li>
-								<li><a href="">Tonga</a></li>
-								<li><a href="">Echarpe Storchenwiege</a></li>
-								<li><a href="">Tri-cotti</a></li>
-								<li><a href="">Tricot-slen</a></li>
-								<li><a href="">BB sling</a></li>
-								<li><a href="">BB tai</a></li>
-								<li><a href="">Ergobaby</a></li>
-								<li><a href="">Manduca</a></li>
-								<li><a href="">Vetements de portage</a></li>
-								<li><a href="">Porte-poupées</a></li>
-								<li><a href="">Locations de porte-bébés</a></li>
+								<li><a href="grandeCategorie.html">Minilou</a></li>
+								<li><a href="grandeCategorie.html">Tonga</a></li>
+								<li><a href="grandeCategorie.html">Echarpe Storchenwiege</a></li>
+								<li><a href="grandeCategorie.html">Tri-cotti</a></li>
+								<li><a href="grandeCategorie.html">Tricot-slen</a></li>
+								<li><a href="grandeCategorie.html">BB sling</a></li>
+								<li><a href="grandeCategorie.html">BB tai</a></li>
+								<li><a href="grandeCategorie.html">Ergobaby</a></li>
+								<li><a href="grandeCategorie.html">Manduca</a></li>
+								<li><a href="grandeCategorie.html">Vetements de portage</a></li>
+								<li><a href="grandeCategorie.html">Porte-poupées</a></li>
+								<li><a href="grandeCategorie.html">Locations de porte-bébés</a></li>
 								
 							</ul>
-								<a class="titreCategorie" href="#">Beauté et soin grossesse</a>
+								<a class="titreCategorie" href="grandeCategorie.html">Beauté et soin grossesse</a>
 							<ul>
-								<li><a href="">Compléments alimentaires</a></li>
-								<li><a href="">Relaxation et soins du corps</a></li>
-								<li><a href="">Soin du périnée</a></li>
-								<li><a href="">Accouchement serein</a></li>
+								<li><a href="grandeCategorie.html">Compléments alimentaires</a></li>
+								<li><a href="grandeCategorie.html">Relaxation et soins du corps</a></li>
+								<li><a href="grandeCategorie.html">Soin du périnée</a></li>
+								<li><a href="grandeCategorie.html">Accouchement serein</a></li>
 								
 							</ul>
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Jeux et jouets</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Jeux et jouets</a>
 							<ul>
-								<li><a href="">Jeux de société</a></li>
-								<li><a href="">Puzzles et jeux de logiques</a></li>
-								<li><a href="">Jouets</a></li>
-								<li><a href="">Jeux d'éveil</a></li>
-								<li><a href="">Activités manuelles</a></li>								
+								<li><a href="grandeCategorie.html">Jeux de société</a></li>
+								<li><a href="grandeCategorie.html">Puzzles et jeux de logiques</a></li>
+								<li><a href="grandeCategorie.html">Jouets</a></li>
+								<li><a href="grandeCategorie.html">Jeux d'éveil</a></li>
+								<li><a href="grandeCategorie.html">Activités manuelles</a></li>								
 							</ul>
-							<a class="titreCategorie" href="#">Biberons et sucettes</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Biberons et sucettes</a>
 							<ul>
-								<li><a href="">Sucettes</a></li>
-								<li><a href="">Dr Brown</a></li>
-								<li><a href="">Ecobaby - Natursutten</a></li>
-								<li><a href="">Green to grow</a></li>
-								<li><a href="">Mollis</a></li>
+								<li><a href="grandeCategorie.html">Sucettes</a></li>
+								<li><a href="grandeCategorie.html">Dr Brown</a></li>
+								<li><a href="grandeCategorie.html">Ecobaby - Natursutten</a></li>
+								<li><a href="grandeCategorie.html">Green to grow</a></li>
+								<li><a href="grandeCategorie.html">Mollis</a></li>
 							</ul>
-							<a class="titreCategorie" href="#">Listes de naissance</a>	
+							<a class="titreCategorie" href="grandeCategorie.html">Listes de naissance</a>	
 						</li>									
 					</ul>
 				</div>
@@ -344,48 +357,48 @@
 				<div class="dropdown">
 					<ul>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">La maison au naturel</a>
+							<a class="titreCategorie" href="grandeCategorie.html">La maison au naturel</a>
 							<ul>
-								<li><a href="">Linge de bain</a></li>
-								<li><a href="">Articles de Cuisine</a></li>
-								<li><a href="">Graines à germer</a></li>
-								<li><a href="">Sacs et pochettes</a></li>
-								<li><a href="">Insecticides et répulsifs</a></li>
-								<li><a href="">Papier Hygiénique</a></li>
-								<li><a href="">Filtration d'eau</a></li>	
-								<li><a href="">Air pur</a></li>	
-								<li><a href="">Sacs poubelles</a></li>			<li><a href="">Le jardin au naturel</a></li>		
+								<li><a href="grandeCategorie.html">Linge de bain</a></li>
+								<li><a href="grandeCategorie.html">Articles de Cuisine</a></li>
+								<li><a href="grandeCategorie.html">Graines à germer</a></li>
+								<li><a href="grandeCategorie.html">Sacs et pochettes</a></li>
+								<li><a href="grandeCategorie.html">Insecticides et répulsifs</a></li>
+								<li><a href="grandeCategorie.html">Papier Hygiénique</a></li>
+								<li><a href="grandeCategorie.html">Filtration d'eau</a></li>	
+								<li><a href="grandeCategorie.html">Air pur</a></li>	
+								<li><a href="grandeCategorie.html">Sacs poubelles</a></li>			<li><a href="grandeCategorie.html">Le jardin au naturel</a></li>		
 							</ul>					
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Tissu</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Tissu</a>
 							<ul>
-								<li><a href="">Maille de coton biologique</a></li>
-								<li><a href="">Coton tissé biologique</a></li>
-								<li><a href="">Ouates et molletons</a></li>
-								<li><a href="">Tissu bio imperméable</a></li>	
-								<li><a class="titreCategorie" href="#">Produits d'entretien</a></li>							
+								<li><a href="grandeCategorie.html">Maille de coton biologique</a></li>
+								<li><a href="grandeCategorie.html">Coton tissé biologique</a></li>
+								<li><a href="grandeCategorie.html">Ouates et molletons</a></li>
+								<li><a href="grandeCategorie.html">Tissu bio imperméable</a></li>	
+								<li><a class="titreCategorie" href="grandeCategorie.html">Produits d'entretien</a></li>							
 							</ul>
 					
 						</li>	
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Produits sols et sanitaires</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Produits sols et sanitaires</a>
 							<ul>
-								<li><a href="">Sols et multi-usages</a></li>
-								<li><a href="">Cuisine</a></li>
-								<li><a href="">Lessive</a></li>	
-								<li><a href="">Surfaces spéciales</a></li>
-								<li><a href="">Droguerie</a></li>
-								<li><a href="">Remplissez vos bidons vides!</a></li>			
+								<li><a href="grandeCategorie.html">Sols et multi-usages</a></li>
+								<li><a href="grandeCategorie.html">Cuisine</a></li>
+								<li><a href="grandeCategorie.html">Lessive</a></li>	
+								<li><a href="grandeCategorie.html">Surfaces spéciales</a></li>
+								<li><a href="grandeCategorie.html">Droguerie</a></li>
+								<li><a href="grandeCategorie.html">Remplissez vos bidons vides!</a></li>			
 								
 							</ul>							
 
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Produits vaisselle</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Produits vaisselle</a>
 							<ul>
-								<li><a href="">Vaisselle mains</a></li>
-								<li><a href="">Vaisselle machine</a></li>			
+								<li><a href="grandeCategorie.html">Vaisselle mains</a></li>
+								<li><a href="grandeCategorie.html">Vaisselle machine</a></li>			
 							</ul>							
 
 						</li>
@@ -399,48 +412,48 @@
 				<div class="dropdown">
 					<ul>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Adulte</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Adulte</a>
 							<ul>
-								<li><a href="">Grossesse-accouchement</a></li>
-								<li><a href="">Allaitement</a></li>
-								<li><a href="">Alimentation</a></li>
-								<li><a href="">Aromathérapie</a></li>
-								<li><a href="">Famille Bio/Ecologie</a></li><li><a href="">Produits minceurs</a></li>
-								<li><a href="">Couches lavables</a></li>
-								<li><a href="">Bien être</a></li>	
-								<li><a href="">Beauté</a></li>	
-								<li><a href="">Loisirs</a></li>						
+								<li><a href="grandeCategorie.html">Grossesse-accouchement</a></li>
+								<li><a href="grandeCategorie.html">Allaitement</a></li>
+								<li><a href="grandeCategorie.html">Alimentation</a></li>
+								<li><a href="grandeCategorie.html">Aromathérapie</a></li>
+								<li><a href="grandeCategorie.html">Famille Bio/Ecologie</a></li><li><a href="grandeCategorie.html">Produits minceurs</a></li>
+								<li><a href="grandeCategorie.html">Couches lavables</a></li>
+								<li><a href="grandeCategorie.html">Bien être</a></li>	
+								<li><a href="grandeCategorie.html">Beauté</a></li>	
+								<li><a href="grandeCategorie.html">Loisirs</a></li>						
 							</ul>					
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Santé</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Santé</a>
 							<ul>
-								<li><a href="">La santé par l'alimentation</a></li>
-								<li><a href="">Vaccinations et maladies</a></li>
-								<li><a href="">Pollutions</a></li>
-								<li><a href="">Vie saine et remèdes</a></li>
-								<li><a href="">Homéopathie</a></li>
-								<li><a href="">Fleurs de Bach</a></li>
+								<li><a href="grandeCategorie.html">La santé par l'alimentation</a></li>
+								<li><a href="grandeCategorie.html">Vaccinations et maladies</a></li>
+								<li><a href="grandeCategorie.html">Pollutions</a></li>
+								<li><a href="grandeCategorie.html">Vie saine et remèdes</a></li>
+								<li><a href="grandeCategorie.html">Homéopathie</a></li>
+								<li><a href="grandeCategorie.html">Fleurs de Bach</a></li>
 								
 							</ul>
 					
 						</li>	
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Maternage - Education</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Maternage - Education</a>
 							<ul>
-								<li><a href="">Education - communication</a></li>
-								<li><a href="">Massage</a></li>
-								<li><a href="">Portage</a></li>			
+								<li><a href="grandeCategorie.html">Education - communication</a></li>
+								<li><a href="grandeCategorie.html">Massage</a></li>
+								<li><a href="grandeCategorie.html">Portage</a></li>			
 								
 							</ul>							
 
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Enfants</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Enfants</a>
 							<ul>
-								<li><a href="">Clin d'oeil</a></li>
-								<li><a href="">Cahiers d'exercices - Jouvence</a></li>
-								<li><a href="">Grandir autrement</a></li>			
+								<li><a href="grandeCategorie.html">Clin d'oeil</a></li>
+								<li><a href="grandeCategorie.html">Cahiers d'exercices - Jouvence</a></li>
+								<li><a href="grandeCategorie.html">Grandir autrement</a></li>			
 							</ul>							
 
 						</li>
@@ -454,28 +467,28 @@
 				<div class="dropdown">
 					<ul>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Papeterie</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Papeterie</a>
 							<ul>
-								<li><a href="">Papier</a></li>
-								<li><a href="">Classer</a></li>
-								<li><a href="">Petites fournitures</a></li>
-								<li><a href="">Ecrire</a></li>
-								<li><a href="">Trousses</a></li>
-								<li><a href="">Cartables et sacs scolaires</a></li>
-								<li><a href="">Cahiers et Calendriers</a></li>							
+								<li><a href="grandeCategorie.html">Papier</a></li>
+								<li><a href="grandeCategorie.html">Classer</a></li>
+								<li><a href="grandeCategorie.html">Petites fournitures</a></li>
+								<li><a href="grandeCategorie.html">Ecrire</a></li>
+								<li><a href="grandeCategorie.html">Trousses</a></li>
+								<li><a href="grandeCategorie.html">Cartables et sacs scolaires</a></li>
+								<li><a href="grandeCategorie.html">Cahiers et Calendriers</a></li>							
 							</ul>					
 						</li>
 						<li class="colonne">
-							<a class="titreCategorie" href="#">Vêtements bébé</a>
+							<a class="titreCategorie" href="grandeCategorie.html">Vêtements bébé</a>
 							<ul>
-								<li><a href="">Body</a></li>
-								<li><a href="">Pijamas et grenouillères</a></li>
-								<li><a href="">Pantalon-short-robe</a></li>
-								<li><a href="">Pull,sweatshirt, manteau</a></li>
-								<li><a href="">Couverture-bonnet-écharpe</a></li>
-								<li><a href="">Jambières</a></li>
-								<li><a href="">Chausson Bobux</a></li>
-								<li><a href="">Chaussures Bobux</a></li>
+								<li><a href="grandeCategorie.html">Body</a></li>
+								<li><a href="grandeCategorie.html">Pijamas et grenouillères</a></li>
+								<li><a href="grandeCategorie.html">Pantalon-short-robe</a></li>
+								<li><a href="grandeCategorie.html">Pull,sweatshirt, manteau</a></li>
+								<li><a href="grandeCategorie.html">Couverture-bonnet-écharpe</a></li>
+								<li><a href="grandeCategorie.html">Jambières</a></li>
+								<li><a href="grandeCategorie.html">Chausson Bobux</a></li>
+								<li><a href="grandeCategorie.html">Chaussures Bobux</a></li>
 								<li><a href="#">La Queue du Chat Hiver 12/13</a></li>
 							</ul>
 					
@@ -483,8 +496,8 @@
 						<li class="colonne">
 							<ul>
 
-							<li><a class="titreCategorie" href="#">Vêtements femme</a></li>
-							<li><a class="titreCategorie" href="#">Vêtements homme</a></li>								
+							<li><a class="titreCategorie" href="grandeCategorie.html">Vêtements femme</a></li>
+							<li><a class="titreCategorie" href="grandeCategorie.html">Vêtements homme</a></li>								
 
 						</ul>
 					</li>
@@ -493,7 +506,6 @@
 			</li>
 		</ul>
 		</nav>
-
 		
 	</header>
 	<div id="content">					
@@ -504,7 +516,7 @@
 				<p>Conseils personnels, aucun e-mail types</p>
 			</div>		
 		<section class="produit centrer">
-			<div class="breadcrumb"><a class="lien" href="#">Maison<a/> > <a class="lien" href="#">La maison au naturel<a/> > <a class="lien" href="#">Filtration d'eau<a/> > <a class="lien" href="#">Carafes et pack<a/> > <a class="lien" href="#">Bouteille d'eau filtrante "Fill & Go" (Brita)<a/></div>
+			<div class="breadcrumb"><a class="lien" href="#">Maison</a> > <a class="lien" href="#">La maison au naturel</a> > <a class="lien" href="#">Filtration d'eau</a> > <a class="lien" href="#">Carafes et pack</a> > <a class="lien" href="#">Bouteille d'eau filtrante "Fill & Go" (Brita)</a></div>
 			<div id="ficheProduit" itemscope itemtype="http://schema.org/Product" class="hproduct">	
 				<div class="imagesFiche">
 					<a href="img/articles/bouteilleFiltrante.png"><img itemprop="image" class="photo" src="img/articles/bouteilleFiltrante.png" alt="Image de l'article Bouteille d'eau filtrante"></a>	
@@ -526,16 +538,16 @@
 						
 						<p class="description">Boire une eau au goût agréable n'a jamais été aussi simple&nbsp;!
 
-						<p class="description">La nouvelle BRITA Fill&Go filtre l'eau au moment où vous la buvez, vous avez ainsi une eau agréable à boire et qui vous accompagne dans tous vos déplacements.</p>
+						<p class="description">La nouvelle BRITA Fill&amp;Go filtre l'eau au moment où vous la buvez, vous avez ainsi une eau agréable à boire et qui vous accompagne dans tous vos déplacements.</p>
 
 						<p class="description">Solution pratique pour réduire vos déchets plastiques, mais aussi vos dépenses&nbsp;!</p>
 
-						<p class="description">Cette bouteille filtrante haute qualité avec filtration au charbon actif transforme de manière fiable l'eau du robinet en eau filtrée au goût agréable. Insérez simplement un disque filtrant BRITA Fill&Go une fois par semaine et remplissez d'eau du robinet. A n'importe quel moment et où que vous soyez. Cette nouveauté est durable et disponible en 4 couleurs tendance et son entretien est facile, elle convient au lave-vaisselle. La filtration BRITA partout avec vous - pour seulement quelques centimes par litre.</p>
+						<p class="description">Cette bouteille filtrante haute qualité avec filtration au charbon actif transforme de manière fiable l'eau du robinet en eau filtrée au goût agréable. Insérez simplement un disque filtrant BRITA Fill&amp;Go une fois par semaine et remplissez d'eau du robinet. A n'importe quel moment et où que vous soyez. Cette nouveauté est durable et disponible en 4 couleurs tendance et son entretien est facile, elle convient au lave-vaisselle. La filtration BRITA partout avec vous - pour seulement quelques centimes par litre.</p>
 
 						<a href="#plus" class="voirPlus lien">Plus de détails</a>
 						<div id="plus"> 
 
-							<p class="description">Fill & Go remplace avantageusement des centaines de bouteilles en plastique. Un matériau résistant à longue durée à vie pour une bouteille réutilisable à l'infini. Un filtre en matière 100 naturelle. Fill&Go, c'est le meilleur qualité/prix de l'eau de consommation nomade (environ 0,80 centimes au litre), une solution économique 10 à 50 fois moins chère que les bouteilles en plastique petit format hors domicile. Chaque disque de 6 gammes permet de filtrer jusqu'à 20 litres d'eau, soit 1 semaine de filtration nomade.</p>
+							<p class="description">Fill & Go remplace avantageusement des centaines de bouteilles en plastique. Un matériau résistant à longue durée à vie pour une bouteille réutilisable à l'infini. Un filtre en matière 100 naturelle. Fill&amp;Go, c'est le meilleur qualité/prix de l'eau de consommation nomade (environ 0,80 centimes au litre), une solution économique 10 à 50 fois moins chère que les bouteilles en plastique petit format hors domicile. Chaque disque de 6 gammes permet de filtrer jusqu'à 20 litres d'eau, soit 1 semaine de filtration nomade.</p>
 
 							<ul class="description">
 								<li>Une bouteille durable haute qualité sans bisphenol A qui convient au lave-vaisselle: légère et solide!</li>
@@ -543,13 +555,13 @@
 								<li>Une bouteille d'une contenance de 600ml qui tient dans tous les porte-gobelet.</li>
 								<li>Dimensions: Hauteur : 220 mm, Diamètre: 72 mm</li>
 								<li>En Tritan : durable, réutilisable et hygiénique (lavable au lave-vaisselle)</li>
-								<li>Economique: Un disque filtrant BRITA Fill&Go par semaine c'est tout ce qu'il vous faut pour une eau filtrée gorgée après gorgée.</li>
+								<li>Economique: Un disque filtrant BRITA Fill&amp;Go par semaine c'est tout ce qu'il vous faut pour une eau filtrée gorgée après gorgée.</li>
 								<li>Réduit significativement le chlore et les autres substances altérant le goût de l'eau et les fines particules.</li>
-								<li>4 disques filtrants BRITA Fill&Go inclus</li>
+								<li>4 disques filtrants BRITA Fill&amp;Go inclus</li>
 								<li>Disponible en 4 couleurs tendance: gris, bleu, rose, vert</li>
 								<li>Boire pratique : Avec une paille pour boire dans toutes les positions</li>
 							</ul>
-							<a href="#" class="isAccessoryOrSparePartFor accessoire lien">Recharges de disques filtrants &laquo;&nbsp;Fill & Go&nbsp;&raquo; vendue séparément</a>
+							<a href="#" class="isAccessoryOrSparePartFor accessoire lien">Recharges de disques filtrants &laquo;&nbsp;Fill &amp; Go&nbsp;&raquo; vendue séparément</a>
 						</div>
 
 						
@@ -580,12 +592,12 @@
 				<div class="articlesSimilaires">
 					<h2><a href="#" class="grandTitre">Articles similaires</a></h2>
 					<ul>
-						<li><img width="133" src="img/articles/carafeFiltrante.jpg"></li>
-						<li><img width="133" src="img/articles/fillGoDisk.jpg"></li>
-						<li><img width="133" src="img/articles/filtreRobinet.jpg"></li>
-						<li><img width="133" src="img/articles/elemaris.jpg"></li>
-						<li><img width="133" src="img/articles/carafeFiltrante.jpg"></li>
-						<li><img width="133" src="img/articles/fillGoDisk.jpg"></li>
+						<li><img width="133" src="img/articles/carafeFiltrante.jpg" alt="Article similaire carafe filtrante"></li>
+						<li><img width="133" src="img/articles/fillGoDisk.jpg" alt="Article similaire disques fill and go"></li>
+						<li><img width="133" src="img/articles/filtreRobinet.jpg" alt="Article similaire filtre robinet"></li>
+						<li><img width="133" src="img/articles/elemaris.jpg" alt="Article similaire elemaris"></li>
+						<li><img width="133" src="img/articles/carafeFiltrante.jpg" alt="Article similaire carafe filtrante"></li>
+						<li><img width="133" src="img/articles/fillGoDisk.jpg" alt="Article similaire disques fill and go"></li>
 						
 					</ul>
 				</div>
@@ -647,6 +659,7 @@
 
 
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/hoverintent.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

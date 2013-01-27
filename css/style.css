@@ -1,4 +1,137 @@
-@import url(reset.css);
+/************************************************
+/* RESET MEYER
+************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/************************************************
+/* FIN RESET MEYER
+************************************************/
 @font-face {
   font-family: 'ComfortaaThin';
   src: url('../fonts/Comfortaa_Thin-webfont.eot');
@@ -133,7 +266,7 @@ body {
   font-size: 1.25em;
   float: right;
   z-index: 5;
-  width: 17em;
+  width: 12em;
   position: relative;
   top: -1.7em;
 }
@@ -152,7 +285,6 @@ body {
   height: 4em;
   position: relative;
   top: -0.4em;
-  right: -5em;
 }
 #imgPanier {
   padding: 0.6em;
@@ -177,7 +309,7 @@ body {
 }
 #login ul {
   text-align: right;
-  width: 17em;
+  width: 12em;
 }
 #login li {
   display: inline-block;
@@ -194,6 +326,41 @@ body {
   color: #68913a;
   visibility: hidden;
 }
+.seConnecter {
+  position: relative;
+}
+#clicConnecter {
+  position: absolute;
+  background-color: #88aa5c;
+  color: #ecf5e3;
+  top: -1.5em;
+  right: 14em;
+  font-size: 0.9em;
+  padding: 1.8em 0.5em 0.5em 0.5em;
+  border-radius: 10px;
+  border: 3px solid #ecf5e3;
+}
+#clicConnecter label {
+  display: block;
+  width: 17em;
+}
+#clicConnecter input {
+  background-color: #ecf5e3;
+  color: #88aa5c;
+}
+#clicConnecter button {
+  color: #88aa5c;
+  background-color: #ecf5e3;
+  border: 1px solid #88aa5c;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: 'ComfortaaRegular';
+}
+#clicConnecter button:hover {
+  color: #ecf5e3;
+  background-color: #88aa5c;
+  border: 1px solid #ecf5e3;
+}
 #accueilRecherche {
   clear: both;
 }
@@ -207,8 +374,11 @@ body {
 }
 #recherche {
   float: right;
-  width: 16em;
+  width: 20.4em;
   text-align: right;
+}
+#recherche .ui-widget {
+  margin-bottom: 0.4em;
 }
 #recherche form {
   display: inline;
@@ -226,7 +396,6 @@ body {
   background-size: 20px auto;
   background-position: 7px 4px;
   height: 1.7em;
-  width: 8.6em;
 }
 #recherche button {
   color: #ecf5e3;
@@ -254,6 +423,7 @@ nav h3 {
 }
 nav ul {
   position: relative;
+  margin-bottom: 0.7em;
 }
 .lienNav {
   font-size: 1.25em;
@@ -289,7 +459,7 @@ nav ul {
   width: 49em;
   right: 0em;
   z-index: 1;
-  height: 16em;
+  height: 19em;
 }
 .dropdown > ul {
   font-size: 0.8em;
@@ -352,16 +522,21 @@ nav ul {
   margin-bottom: 0.1em;
 }
 .colonne a {
-  color: #12320c;
+  color: #68913a;
 }
 .colonne a:hover {
-  font-family: 'ComfortaaBold';
+  color: #12320c;
 }
 .titreCategorie {
   font-family: 'ComfortaaBold';
-  color: #12320c;
+  color: #68913a;
   margin: 1em 0 0.2em 0;
   font-size: 1.05em;
+  display: block;
+  text-transform: uppercase;
+}
+.titreCategorie:hover {
+  color: #12320c;
 }
 /*----------------FIN HEADER---------------*/
 /*----------------CONTENT---------------*/
@@ -578,6 +753,13 @@ nav ul {
   font-family: 'ComfortaaRegular';
   color: #68913a;
 }
+#formIns #news {
+  display: inline-block;
+  width: 1em;
+}
+#formIns > p {
+  color: #ecf5e3;
+}
 #infosPaiement {
   float: left;
   width: 13em;
@@ -596,7 +778,7 @@ nav ul {
 .breadcrumb {
   background-color: #ecf5e3;
   padding: 0.6em;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 #ficheProduit {
   display: table;
@@ -723,6 +905,180 @@ nav ul {
   margin-left: 5.2em;
 }
 /*--------FIN FICHE PRODUIT-------*/
+/*--------GRANDE CATEGORIE PRODUIT-------*/
+#grandeCategorie {
+  margin-top: 3em;
+}
+#grandeCategorie header {
+  border-bottom: 2px dashed #68913a;
+  padding-bottom: 0.7em;
+  margin-bottom: 1em;
+}
+.imgCategorie {
+  float: left;
+  margin-right: 1.3em;
+}
+#infoGrandeCategorie {
+  padding-top: 1.1em;
+}
+#infoGrandeCategorie h3 {
+  font-family: 'ComfortaaRegular';
+  font-size: 2.3em;
+}
+#infoGrandeCategorie p {
+  font-size: 1.1em;
+  font-family: 'ComfortaaRegular';
+}
+.produitsCat {
+  position: relative;
+  display: inline-block;
+  width: 14em;
+  background-color: #88aa5c;
+  border-radius: 10px;
+  padding: 0.5em 0.5em 2em 0.5em;
+  text-align: center;
+  margin: 0 0.515em 0 0.515em;
+  box-shadow: 0px 2px 7px #555555;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-out;
+  vertical-align: top;
+  margin-bottom: 3em;
+}
+.produitsCat a {
+  color: #ecf5e3;
+}
+.produitsCat:hover {
+  position: relative;
+  top: -0.3em;
+}
+.produitsCat:first-child,
+.produitsCat:nth-child(5),
+.produitsCat:nth-child(9),
+.produitsCat:nth-child(13) {
+  margin-left: 0;
+}
+.produitsCat:last-child,
+.produitsCat:nth-child(4),
+.produitsCat:nth-child(8),
+.produitsCat:nth-child(12) {
+  margin-right: 0;
+}
+.produitsCat h4 {
+  color: #ecf5e3;
+}
+.produitsCat h3 {
+  height: 3em;
+}
+.choix {
+  display: inline-block;
+  width: 12.4em;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ecf5e3;
+  border: 2px solid #68913a;
+  padding: 1em 0.5em 1em 0.5em;
+  margin: 0em 0.9em 3em 0em;
+  font-family: 'ComfortaaBold';
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+.choix:hover {
+  background-color: #68913a;
+  border: 2px solid #ecf5e3;
+}
+.choix:hover a {
+  color: #ecf5e3;
+}
+.choix a {
+  color: #68913a;
+}
+#categorie1 .choix:first-child {
+  background-color: #68913a;
+  border: 2px solid #ecf5e3;
+}
+#categorie1 .choix:first-child a {
+  color: #ecf5e3;
+}
+#categorie2 .choix:nth-child(2) {
+  background-color: #68913a;
+  border: 2px solid #ecf5e3;
+}
+#categorie2 .choix:nth-child(2) a {
+  color: #ecf5e3;
+}
+/*--------FIN GRANDE CATEGORIE PRODUIT-------*/
+/*--------PANIER-------*/
+#pagePanier {
+  background-color: #88aa5c;
+  border-radius: 10px;
+  padding: 1em;
+  padding-bottom: 3em;
+}
+#pagePanier h1 {
+  color: #ecf5e3;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+#pagePanier table {
+  background-color: #ecf5e3;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 61.7em;
+  font-family: 'ComfortaaRegular';
+}
+.head {
+  color: #68913a;
+  border: none;
+  font-size: 1.2em;
+  height: 2em;
+}
+td {
+  padding-top: 0.6em;
+}
+tr {
+  height: 5.5em;
+  border-bottom: 2px dashed #68913a;
+}
+tr:last-child {
+  border: none;
+}
+.tdA {
+  padding-left: 1em;
+}
+.tdA img {
+  float: left;
+  margin-right: 1em;
+}
+.panierActions {
+  margin-top: 1.3em;
+  text-align: right;
+}
+.panierActions a {
+  background-color: #ecf5e3;
+  border: 2px solid #88aa5c;
+  font-family: 'ComfortaaRegular';
+  border-radius: 5px;
+  color: #88aa5c;
+  font-size: 1.6em;
+  padding: 0.3em;
+}
+.panierActions a:hover {
+  color: #ecf5e3;
+  background-color: #88aa5c;
+  border: 2px solid #ecf5e3;
+}
+.panierTotal {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: #ecf5e3;
+  font-family: 'ComfortaaBold';
+  float: right;
+}
+/*--------FIN PANIER-------*/
 /*--------FIN CONTENT-------*/
 /*--------FOOTER-------*/
 footer {
@@ -785,9 +1141,10 @@ footer {
   display: inline-block;
 }
 .email {
-  background-image: url('../img/email.png');
-  background-size: 20px auto;
-  background-repeat: no-repeat;
+  background: url('../img/sprite.png') no-repeat -379px -206px;
+  background-size: 422px 338px;
+  width: 21px;
+  height: 15px;
   padding-left: 1.8em;
 }
 .country-name + li {
