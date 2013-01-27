@@ -259,13 +259,13 @@ nav ul {
   font-size: 1.25em;
   font-family: 'ComfortaaRegular';
   background-color: #68913a;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-block;
-  width: 5.53em;
+  width: 7.7em;
   padding-bottom: 1em;
   text-align: center;
-  margin-right: 0.395em;
-  margin-left: 0.395em;
+  margin-right: 0.39465em;
+  margin-left: 0.39464em;
 }
 .lienNav:first-child {
   margin-left: 0;
@@ -289,6 +289,7 @@ nav ul {
   width: 49em;
   right: 0em;
   z-index: 1;
+  height: 16em;
 }
 .dropdown > ul {
   font-size: 0.8em;
@@ -416,17 +417,20 @@ nav ul {
   width: 47.9em;
 }
 #nouveauxArt,
-#promosArt {
+#promosArt,
+#liquisArt {
   height: 27em;
   margin-top: 2.5em;
   margin-bottom: 3em;
 }
 #nouveauxArt h2 + div,
-#promosArt h2 + div {
+#promosArt h2 + div,
+#liquisArt h2 + div {
   margin-top: 3em;
 }
 .nouvelArt,
-.promoArt {
+.promoArt,
+.liquiArt {
   position: relative;
   float: left;
   width: 14em;
@@ -442,24 +446,29 @@ nav ul {
   -moz-transition-timing-function: ease-out;
 }
 .nouvelArt a,
-.promoArt a {
+.promoArt a,
+.liquiArt a {
   color: #ecf5e3;
 }
 .nouvelArt:hover,
-.promoArt:hover {
+.promoArt:hover,
+.liquiArt:hover {
   position: relative;
   top: -0.3em;
 }
 .nouvelArt:first-child,
-.promoArt:first-child {
+.promoArt:first-child,
+.liquiArt:first-child {
   margin-left: 0;
 }
 .nouvelArt:last-child,
-.promoArt:last-child {
+.promoArt:last-child,
+.liquiArt:last-child {
   margin-right: 0;
 }
 .nouvelArt h3,
-.promoArt h3 {
+.promoArt h3,
+.liquiArt h3 {
   margin-top: 1em;
 }
 .prix {
@@ -584,17 +593,22 @@ nav ul {
   margin-bottom: 1em;
 }
 /*--------FICHE PRODUIT-------*/
+.breadcrumb {
+  background-color: #ecf5e3;
+  padding: 0.6em;
+  font-size: 1.1em;
+}
 #ficheProduit {
   display: table;
   margin-top: 3em;
 }
 .imagesFiche {
-  width: 23.3em;
+  width: 20.6em;
   float: left;
   margin-right: 1em;
 }
 .imagesFiche img {
-  width: 23.3em;
+  width: 20.6em;
 }
 .infosFiche {
   margin-bottom: 3em;
@@ -632,6 +646,7 @@ nav ul {
   font-size: 1.4em;
   background-size: 47px;
   top: 0em;
+  float: left;
 }
 .infosFiche .ajoutAchats {
   background-image: url('../img/listeAchats.png');
@@ -654,7 +669,7 @@ nav ul {
 }
 .articlesSimilaires li {
   display: inline;
-  margin: 0em 0.565em 0em 0.565em;
+  margin: 0em 0.56473em 0em 0.56473em;
 }
 .articlesSimilaires li:last-child {
   margin-right: 0em;
@@ -675,7 +690,7 @@ nav ul {
   margin-top: 1em;
 }
 .details {
-  width: 23.3em;
+  width: 20.6em;
 }
 .details li {
   width: 6.9em;
@@ -696,6 +711,16 @@ nav ul {
 }
 #quantite {
   width: 3em;
+}
+.actions {
+  clear: right;
+  margin-top: 6em;
+}
+.actions a:first-child {
+  margin-right: 5.2em;
+}
+.actions a:last-child {
+  margin-left: 5.2em;
 }
 /*--------FIN FICHE PRODUIT-------*/
 /*--------FIN CONTENT-------*/

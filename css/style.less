@@ -328,14 +328,14 @@ nav {
 	font-size: 1.25em;
 	font-family: @comfortaaR;
 	background-color: @vert;
-	border-radius: 10px;
+	border-radius: 7px;
 
 	display: inline-block;
-	width: 5.53em;
+	width: 7.7em;
 	padding-bottom: 1em;
 	text-align: center;
-	margin-right:0.395em;
-	margin-left:0.395em;
+margin-right: 0.39465em;
+margin-left: 0.39464em;
 
 	&:first-child {
 		margin-left:0;
@@ -364,7 +364,7 @@ nav {
 	width:49em;
 	right:0em;
 	z-index: 1;
-
+	height: 16em;
 	>ul {
 		font-size:0.8em;
 		margin:0 auto;
@@ -530,7 +530,7 @@ nav {
 	width:47.9em;
 }
 
-#nouveauxArt, #promosArt {
+#nouveauxArt, #promosArt, #liquisArt {
 	height: 27em;
 	margin-top: 2.5em;
 	margin-bottom: 3em;
@@ -540,7 +540,7 @@ nav {
 	}
 }
 
-.nouvelArt, .promoArt {
+.nouvelArt, .promoArt, .liquiArt {
 	position:relative;
 	float: left;
 	width:14em;
@@ -711,17 +711,24 @@ nav {
 
 
 /*--------FICHE PRODUIT-------*/
+.breadcrumb {
+	background-color: @beige;
+	padding: 0.6em;
+	font-size: 1.1em;
+}
+
+
 #ficheProduit {
 	display:table;
 	margin-top: 3em;
 }
 
 .imagesFiche {
-	width: 23.3em;
+	width: 20.6em;
 	float:left;
 	margin-right: 1em;
 	img {
-		width: 23.3em;
+		width: 20.6em;
 	}
 }
 
@@ -767,6 +774,7 @@ nav {
 		font-size: 1.4em;
 		background-size: 47px;
 		top: 0em;
+		float: left;
 	}
 
 	.ajoutAchats {
@@ -798,7 +806,7 @@ ul {
 
 li {
 	display: inline;
-	margin: 0em 0.565em 0em 0.565em;
+	margin: 0em 0.56473em 0em 0.56473em;
 
 	&:last-child {
 		margin-right: 0em;
@@ -828,7 +836,7 @@ li {
 
 .details {
 
-	width: 23.3em;
+	width: 20.6em;
 
 	li {
 		width: 6.9em;
@@ -853,6 +861,17 @@ li {
 
 #quantite {
 	width: 3em;
+}
+
+.actions {
+	clear: right;
+	margin-top: 6em;
+	a:first-child {
+		margin-right: 5.2em;
+	}
+	a:last-child {
+		margin-left: 5.2em;
+	}
 }
 
 /*--------FIN FICHE PRODUIT-------*/
