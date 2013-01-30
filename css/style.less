@@ -114,6 +114,10 @@ li {
 
 a {
 	text-decoration: none;
+	color: @vert;
+	&:hover {
+		color: @vertFonce;
+	}
 }
 
 .outliner {
@@ -161,6 +165,26 @@ body{
 ::selection, ::-moz-selection {
 	background-color: #c2dca4;
 }
+
+.titre {
+	color: @beige;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+	input {
+		width: 19.9em;
+		border: 1px solid @vert;
+		border-radius: 5px;
+		color: @vert;
+		padding-left: 0.5em;
+		font-family: @comfortaaR;
+	}
+
+
+
+
 
 /*----------------HEADER---------------*/
 
@@ -222,6 +246,7 @@ body{
 
 	a {
 		color: @vert;
+		padding: 1.5em;
 	}
 }
 
@@ -375,15 +400,14 @@ border: 1px solid @beige;
 		background-color: @beige;
 		border: 2px solid @vert;
 		border-radius: 20px;
-		color: @vert;
 		padding-left: 2em;
-		font-family: @comfortaaR;
 		font-size: 1.1em;
 		background-image: url('../img/loupe.png');
 		background-repeat: no-repeat;
 		background-size: 20px auto;
 		background-position: 7px 4px;
 		height: 1.7em;
+		width: 11em;
 	}
 
 	button {
@@ -457,7 +481,7 @@ margin-left: 0.39em;
 	border-radius:10px;
 	text-align: left;
 	padding: 1em;
-	width:49em;
+	width:49.2em;
 	right:0em;
 	z-index: 1;
 	height: 19em;
@@ -531,6 +555,11 @@ margin-left: 0.39em;
 
 #divers:hover h3 {
 	background-image:url('../img/menuH/divers.png');
+}
+
+#content .flexslider {
+	margin: 0 auto;
+	width: 64em;
 }
 
 .colonne {
@@ -736,13 +765,7 @@ margin-left: 0.39em;
 	float: left;
 	width: 45.6em;
 	margin-right: 0.6em;
-
-	h1 {
-		color: @beige;
-		font-size: 1.4em;
-		text-transform: uppercase;
-		margin-bottom: 1em;
-	}
+	margin-bottom: 3em;
 }
 
 #formIns {
@@ -751,6 +774,10 @@ margin-left: 0.39em;
 		border-radius: 10px;
 		padding: 1em;
 		margin-bottom: 1em;
+	}
+
+	p {
+		margin: 0.5em 0 0.5em 0;
 	}
 	h3 {
 		color: @vert;
@@ -764,14 +791,6 @@ margin-left: 0.39em;
 		display: inline-block;
 		text-align: right;
 	}
-	input {
-		width: 19.9em;
-		border: 1px solid @vert;
-		border-radius: 5px;
-		color: @vert;
-		padding-left: 0.5em;
-		font-family: @comfortaaR;
-	}
 	button{
 		font-family: @comfortaaR;
 		text-transform: uppercase;
@@ -781,7 +800,7 @@ margin-left: 0.39em;
 		border-radius: 5px;
 		border: none;
 		cursor: pointer;
-		font-size: 1.2em;
+		font-size: 1.5em;
 		float: right;
 		&:hover,&:active,&:focus {
 			color: @beige;
@@ -989,7 +1008,7 @@ li {
 /*--------GRANDE CATEGORIE PRODUIT-------*/
 
 #grandeCategorie {
-	margin-top: 3em;
+	margin-top: 1em;
 
 	header {
 	border-bottom: 2px dashed @vert;
@@ -1078,6 +1097,7 @@ text-transform: uppercase;
 	border: 2px solid @beige;
 	a{
 	color: @beige;
+	padding: 1.5em;
 	}
 	}
 
@@ -1113,13 +1133,9 @@ text-transform: uppercase;
 	border-radius: 10px;
 	padding: 1em;
 	padding-bottom: 3em;
-
-	h1 {
-		color: @beige;
-		font-size: 1.4em;
-		text-transform: uppercase;
-		margin-bottom: 1em;
-	}
+	clear: both;
+	position: relative;
+	top: 0.5em;
 
 	table {
 		background-color: @beige;
@@ -1160,8 +1176,8 @@ tr {
 }
 
 .panierActions {
-margin-top: 1.3em;
-text-align: right;
+margin-top: 1em;
+margin-bottom: 1.3em;
 
  a {
 	background-color: @beige;
@@ -1171,10 +1187,25 @@ border-radius: 5px;
 color: @vertClair;
 font-size: 1.6em;
 padding: 0.3em;
+float:left;
+
 &:hover {
 	color: @beige;
 	background-color: @vertClair;
 	border: 2px solid @beige;
+}
+
++a {
+	background-image: url('../img/fleche.png');
+background-repeat: no-repeat;
+background-size: 30px;
+background-position: 137px;
+padding-right: 2em;
+float:right;
+
+&:hover {
+	background-image: url('../img/flecheH.png');
+}
 }
 
 }
@@ -1188,6 +1219,82 @@ float: right;
 }
 
 /*--------FIN PANIER-------*/
+
+
+/*---------COMMANDER-----------*/
+
+.commander {
+
+padding-bottom: 3em;
+margin-top: 3em;
+height: 13em;
+
+section {
+	background-color: @vertClair;
+	border-radius: 10px;
+	padding: 1em;
+	width: 29.4em;
+	}
+	ul {
+		margin-bottom: 1em;
+		border-bottom: 2px dashed @vert;
+		padding-bottom: 0.7em;
+	}
+	input {
+	width: 14em;
+	}
+	label {
+	display: block;
+	}
+	form {
+		background-color: @beige;
+		border-radius: 10px;
+		padding: 1em;
+		margin-bottom: 1em;
+		text-align: right;
+	}
+
+	button {
+		color: @beige;
+		background-color: @vertClair;
+		border: 1px solid @beige;
+		border-radius: 4px;
+		padding: 0.3em;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-top: 0.8em;
+		&:hover {
+			color: @vertClair;
+			background-color: @beige;
+			border: 1px solid @vertClair;
+		}
+	}
+	a {
+		display: block;
+	}
+
+}
+.pasInscrit {
+	float:left;
+}
+
+.inscrit {
+	float: right;
+
+}
+
+
+.etape {
+	color: @vert;
+	font-size: 1.65em;
+	display: inline-block;
+	&:first-child {
+		color: @vertFonce;
+	}
+
+}
+
+/*---------FIN COMMANDER---------*/
 
 /*--------FIN CONTENT-------*/
 

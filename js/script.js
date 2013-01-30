@@ -4,12 +4,13 @@
 	//Global vars
 
 	//methods
-	var resizeImg = function(){
+
+    $(window).load(function() {
 	  		var images = $('.retina');
 	    	images.each(function(i){
 	     	$(this).width($(this).width() / 2);
 	    	});
-	};
+	});
 
 	var dropdown = function(){
 		$('.lienNav').hoverIntent( 
@@ -67,7 +68,6 @@
 
   	$(function(){
   	//Routines
-	resizeImg();
 	$('.dropdown').hide();
 	dropdown();
 	$('#hautPage a').on('click', topPage);

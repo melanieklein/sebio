@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
 	<title>SeBio - Produits naturels, bio et écologiques pour toute la famille&nbsp;!</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	
 </head>
 <body>
 	<h1 class="outliner">Site de SeBio - Produits naturels, bio et écologiques pour toute la famille&nbsp;!</h1>
@@ -517,12 +519,20 @@
 				<p>Conseils personnels, aucun e-mail types</p>
 			</div>		
 
-			<section id="soldes" class="centrer">
-			<h1 class="outliner">Soldes d'hiver</h1>
-			<a href="#">
-			<img src="img/soldes.png" alt="Soldes -30% -40% -50% -60% -70%" width="890">
-			</a>
+			<section class="flexslider centrer">
+			  <ul class="slides">
+			    <li>
+			      <img width="896" height="351" src="img/slider/soldes.png" />
+			    </li>
+			    <li>
+			      <img width="896" height="351" src="img/slider/colis.png" />
+			    </li>
+			    <li>
+			      <img width="896" height="351" src="img/slider/formations.png" />
+			    </li>
+			  </ul>
 			</section>
+
 
 		
 		<section id="nouveauxArt" class="centrer">			
@@ -756,6 +766,12 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/hoverintent.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	    $(window).load(function() {
+    	$('.flexslider').flexslider();
+    });
+	</script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

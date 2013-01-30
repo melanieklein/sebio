@@ -166,6 +166,10 @@ li {
 }
 a {
   text-decoration: none;
+  color: #68913a;
+}
+a:hover {
+  color: #12320c;
 }
 .outliner {
   display: none;
@@ -206,6 +210,20 @@ body {
 ::selection,
 ::-moz-selection {
   background-color: #c2dca4;
+}
+.titre {
+  color: #ecf5e3;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+input {
+  width: 19.9em;
+  border: 1px solid #68913a;
+  border-radius: 5px;
+  color: #68913a;
+  padding-left: 0.5em;
+  font-family: 'ComfortaaRegular';
 }
 /*----------------HEADER---------------*/
 #logoIntro {
@@ -261,6 +279,7 @@ body {
 }
 .preMenu a {
   color: #68913a;
+  padding: 1.5em;
 }
 #panierLogin {
   font-size: 1.25em;
@@ -387,15 +406,14 @@ body {
   background-color: #ecf5e3;
   border: 2px solid #68913a;
   border-radius: 20px;
-  color: #68913a;
   padding-left: 2em;
-  font-family: 'ComfortaaRegular';
   font-size: 1.1em;
   background-image: url('../img/loupe.png');
   background-repeat: no-repeat;
   background-size: 20px auto;
   background-position: 7px 4px;
   height: 1.7em;
+  width: 11em;
 }
 #recherche button {
   color: #ecf5e3;
@@ -456,7 +474,7 @@ nav ul {
   border-radius: 10px;
   text-align: left;
   padding: 1em;
-  width: 49em;
+  width: 49.2em;
   right: 0em;
   z-index: 1;
   height: 19em;
@@ -512,6 +530,10 @@ nav ul {
 }
 #divers:hover h3 {
   background-image: url('../img/menuH/divers.png');
+}
+#content .flexslider {
+  margin: 0 auto;
+  width: 64em;
 }
 .colonne {
   display: inline-block;
@@ -697,18 +719,16 @@ nav ul {
   float: left;
   width: 45.6em;
   margin-right: 0.6em;
-}
-#inscription h1 {
-  color: #ecf5e3;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 #formIns fieldset {
   background-color: #ecf5e3;
   border-radius: 10px;
   padding: 1em;
   margin-bottom: 1em;
+}
+#formIns p {
+  margin: 0.5em 0 0.5em 0;
 }
 #formIns h3 {
   color: #68913a;
@@ -722,14 +742,6 @@ nav ul {
   display: inline-block;
   text-align: right;
 }
-#formIns input {
-  width: 19.9em;
-  border: 1px solid #68913a;
-  border-radius: 5px;
-  color: #68913a;
-  padding-left: 0.5em;
-  font-family: 'ComfortaaRegular';
-}
 #formIns button {
   font-family: 'ComfortaaRegular';
   text-transform: uppercase;
@@ -739,7 +751,7 @@ nav ul {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.5em;
   float: right;
 }
 #formIns button:hover,
@@ -907,7 +919,7 @@ nav ul {
 /*--------FIN FICHE PRODUIT-------*/
 /*--------GRANDE CATEGORIE PRODUIT-------*/
 #grandeCategorie {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 #grandeCategorie header {
   border-bottom: 2px dashed #68913a;
@@ -990,6 +1002,7 @@ nav ul {
 }
 .choix:hover a {
   color: #ecf5e3;
+  padding: 1.5em;
 }
 .choix a {
   color: #68913a;
@@ -1015,12 +1028,9 @@ nav ul {
   border-radius: 10px;
   padding: 1em;
   padding-bottom: 3em;
-}
-#pagePanier h1 {
-  color: #ecf5e3;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  margin-bottom: 1em;
+  clear: both;
+  position: relative;
+  top: 0.5em;
 }
 #pagePanier table {
   background-color: #ecf5e3;
@@ -1054,8 +1064,8 @@ tr:last-child {
   margin-right: 1em;
 }
 .panierActions {
-  margin-top: 1.3em;
-  text-align: right;
+  margin-top: 1em;
+  margin-bottom: 1.3em;
 }
 .panierActions a {
   background-color: #ecf5e3;
@@ -1065,11 +1075,23 @@ tr:last-child {
   color: #88aa5c;
   font-size: 1.6em;
   padding: 0.3em;
+  float: left;
 }
 .panierActions a:hover {
   color: #ecf5e3;
   background-color: #88aa5c;
   border: 2px solid #ecf5e3;
+}
+.panierActions a + a {
+  background-image: url('../img/fleche.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 137px;
+  padding-right: 2em;
+  float: right;
+}
+.panierActions a + a:hover {
+  background-image: url('../img/flecheH.png');
 }
 .panierTotal {
   font-size: 1.6em;
@@ -1079,6 +1101,69 @@ tr:last-child {
   float: right;
 }
 /*--------FIN PANIER-------*/
+/*---------COMMANDER-----------*/
+.commander {
+  padding-bottom: 3em;
+  margin-top: 3em;
+  height: 13em;
+}
+.commander section {
+  background-color: #88aa5c;
+  border-radius: 10px;
+  padding: 1em;
+  width: 29.4em;
+}
+.commander ul {
+  margin-bottom: 1em;
+  border-bottom: 2px dashed #68913a;
+  padding-bottom: 0.7em;
+}
+.commander input {
+  width: 14em;
+}
+.commander label {
+  display: block;
+}
+.commander form {
+  background-color: #ecf5e3;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: right;
+}
+.commander button {
+  color: #ecf5e3;
+  background-color: #88aa5c;
+  border: 1px solid #ecf5e3;
+  border-radius: 4px;
+  padding: 0.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0.8em;
+}
+.commander button:hover {
+  color: #88aa5c;
+  background-color: #ecf5e3;
+  border: 1px solid #88aa5c;
+}
+.commander a {
+  display: block;
+}
+.pasInscrit {
+  float: left;
+}
+.inscrit {
+  float: right;
+}
+.etape {
+  color: #68913a;
+  font-size: 1.65em;
+  display: inline-block;
+}
+.etape:first-child {
+  color: #12320c;
+}
+/*---------FIN COMMANDER---------*/
 /*--------FIN CONTENT-------*/
 /*--------FOOTER-------*/
 footer {
