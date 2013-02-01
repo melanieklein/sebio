@@ -65,6 +65,10 @@
     });
   };
 
+  var infosMode = function(e){
+  	$(this).next('.plusInfos').slideDown();
+  }
+
 
   	$(function(){
   	//Routines
@@ -77,6 +81,8 @@
 	$('#clicConnecter').hide();
 	$('.seConnecter').on('click', connexion);
 	autocompletion;
+	$('.plusInfos').hide();
+	$('.clicPlusInfos').on('click', infosMode)
 	});
 
 })(jQuery);

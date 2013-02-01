@@ -1113,11 +1113,6 @@ tr:last-child {
   padding: 1em;
   width: 29.4em;
 }
-.commander ul {
-  margin-bottom: 1em;
-  border-bottom: 2px dashed #68913a;
-  padding-bottom: 0.7em;
-}
 .commander input {
   width: 14em;
 }
@@ -1130,21 +1125,6 @@ tr:last-child {
   padding: 1em;
   margin-bottom: 1em;
   text-align: right;
-}
-.commander button {
-  color: #ecf5e3;
-  background-color: #88aa5c;
-  border: 1px solid #ecf5e3;
-  border-radius: 4px;
-  padding: 0.3em;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 0.8em;
-}
-.commander button:hover {
-  color: #88aa5c;
-  background-color: #ecf5e3;
-  border: 1px solid #88aa5c;
 }
 .commander a {
   display: block;
@@ -1163,7 +1143,76 @@ tr:last-child {
 .etape:first-child {
   color: #12320c;
 }
+div[class^="commander"] button {
+  color: #ecf5e3;
+  background-color: #88aa5c;
+  border: 1px solid #ecf5e3;
+  border-radius: 4px;
+  padding: 0.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0.8em;
+}
+div[class^="commander"] button:hover {
+  color: #88aa5c;
+  background-color: #ecf5e3;
+  border: 1px solid #88aa5c;
+}
+div[class^="commander"] > ul:first-child {
+  margin-bottom: 1em;
+  border-bottom: 2px dashed #68913a;
+  padding-bottom: 0.7em;
+}
+input[type="checkbox"] {
+  width: 3em;
+}
 /*---------FIN COMMANDER---------*/
+.commander2 > div,
+.commander4 > div {
+  background-color: #88aa5c;
+  border-radius: 10px;
+  padding: 1em;
+  margin-right: 0.6em;
+  margin-bottom: 3em;
+}
+.commander2 form,
+.commander4 form {
+  background-color: #ecf5e3;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.mode {
+  color: #68913a;
+  font-family: 'ComfortaaRegular';
+  font-size: 1.35em;
+  margin-bottom: 0.6em;
+}
+.clicPlusInfos {
+  display: block;
+  cursor: pointer;
+  color: #68913a;
+  text-decoration: underline;
+  margin: 0.4em 0em 0.4em 0em;
+}
+.clicPlusInfos:hover {
+  color: #12320c;
+}
+.plusInfos {
+  margin-bottom: 1em;
+  border-bottom: 2px dashed #68913a;
+}
+.plusInfos li {
+  background-image: url('../img/check.png');
+  background-repeat: no-repeat;
+  padding-left: 1.5em;
+  background-size: 15px;
+  margin: 0.5em 0 0.5em 0;
+}
+.listeLabel > li {
+  border-bottom: 1px dashed #68913a;
+  padding: 0.5em 0 0.5em 0;
+}
 /*--------FIN CONTENT-------*/
 /*--------FOOTER-------*/
 footer {

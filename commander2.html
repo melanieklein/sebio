@@ -517,7 +517,7 @@
 			</div>		
 
 
-			<div class="commander centrer">
+			<div class="commander2 centrer">
 				<ul>
 					<li class="etape">Identification > </li>
 					<li class="etape">1. Mode de livraison > </li>
@@ -526,56 +526,62 @@
 					<li class="etape">4. Validation</li>
 				</ul>
 
-				<section>
-					<h1 class="titre">1. Mode de livraison</h1>
-					<ul>
-						<li>
-							<h5>Envoi du colis par colliposte ou taxipost</h5>
-							<p>Envoi par la poste (France métropolitaine, Belgique et pays limitrophes sauf Suisse</p>
-							<ul>
+				<div>
+					<h1 class="titre">1. Mode de livraison</h1>					
+						<form action="commander3.html">
+							<ul class="listeLabel">
+							<li><label class="mode">Envoi du colis par colliposte ou taxipost<input type="checkbox" value="1"/></label>
+							<span class="clicPlusInfos">Infos</span>							
+							<ul class="plusInfos">
+								<li>Envoi par la poste (France métropolitaine, Belgique et pays limitrophes sauf Suisse</li>
 								<li>pas de frais d'envoi si vous commandez pour un montant de 60 € et plus (sinon: prix forfaitaire de 4,7 €)</li>
 								<li>envoi par colissimo (France) ou Taxipost (Belgique), munis d'un code barre qui permettra le suivi du colis en ligne.</li>
 								<li>NOUVEAU: remise contre signature gratuit ! (demandez-le simplement en commentaire de commande)</li>
-							</ul
-						</li>
-						<li>
-							<h5>Envoi sous enveloppe (1 article = 1€ de frais de port)</h5>
-							<p>Un article</p>
-							<ul>
-								<li>Vous ne payez qu'1 € de frais de port</li>
-								<li>Ce mode d'expédition ne fonctionne que si vous ne prenez qu'un article, et qu'il s'agit d'un petit article pouvant être envoyé par enveloppe</li>
-								<li>Exemples: livre, magasine, vêtement, couche lavable, culotte de protection, article d'écriture ou accessoire papeterie, huile essentielle</li>
-								<li>Attention, si vous choisissez cette option pour un autre type d'article, nous pouvons rejeter votre commande</li>
-								<li>PAS APPLICABLE AUX COUCHES JETABLES !!!!!!!! (trop lourd)</li>
 							</ul>
 						</li>
-						<li>
-							<h5>Retrait par le client</h5>						
-							<ul>
+										
+							<li><label class="mode">Envoi sous enveloppe (1 article = 1€ de frais de port)<input type="checkbox" value="2"/></label>
+							<span class="clicPlusInfos">Infos</span>
+								<ul class="plusInfos">
+									<li>Vous ne payez qu'1 € de frais de port</li>
+									<li>Ce mode d'expédition ne fonctionne que si vous ne prenez qu'un article, et qu'il s'agit d'un petit article pouvant être envoyé par enveloppe</li>
+									<li>Exemples: livre, magasine, vêtement, couche lavable, culotte de protection, article d'écriture ou accessoire papeterie, huile essentielle</li>
+									<li>Attention, si vous choisissez cette option pour un autre type d'article, nous pouvons rejeter votre commande</li>
+									<li>PAS APPLICABLE AUX COUCHES JETABLES !!!!!!!! (trop lourd)</li>
+								</ul>
+							</li>
+ 											
+							<li><label class="mode">Retrait par le client<input type="checkbox" value="3"/></label>
+							<span class="clicPlusInfos">Infos</span>
+							<ul class="plusInfos">
 								<li>vous venez chercher le colis chez SeBIO (101 A rue du Monténégro, 1190 Bruxelles) du lundi au vendredi, entre 14h et 18h (ou sur rendez-vous)</li>
 								<li>vous ne payez pas de frais d'envoi.</li>
 								<li>pour le paiement à l'avance, choisissez virement, carte de crédit ou paypal</li>
 								<li>pour le paiement lors du retrait: choisissez espèces, chèque (pour éco-chèques ou eco-pass), ou carte bancaire au show-room (bancontact/visa/mastercard/maestro)</li>
 							</ul>
-						</li>
-						<li>
-							<h5>Autres pays (Suisse et Pays non limitrophes à France/Belgique</h5>
-							<ul>
+							</li>
+					
+							<li><label class="mode">Autres pays (Suisse et Pays non limitrophes à France/Belgique<input type="checkbox" value="4"/></label>
+							<span class="clicPlusInfos">Infos</span>
+								<ul class="plusInfos">
 								<li>vous devez choisir ce mode d'expédition pour les envois en dehors de la France, la Belgique, et les pays limitrophes</li>
 								<li>Les frais d'envois seront calculés selon le poids de votre colis, et nous vous demanderons de payer ces frais d'envoi dans une seconde étape</li>								
 							</ul>
-						</li>
-						<li>
-							<h5>Liste de naissance</h5>
-							<ul>
+							</li>
+						
+					
+							<li><label class="mode">Liste de naissance<input type="checkbox" value="5"/></label>
+							<span class="clicPlusInfos">Infos</span>
+								<ul class="plusInfos">
 								<li>vous avez choisi ce mode d'expédition pour faire un cadeau dans une liste de naissance.</li>
 								<li> Le cadeau restera dans notre show-room, jusqu'à enlèvement par les bénéficiaires.</li>
 								<li>ATTENTION: vous pouvez laisser un message dans le commentaire de la commande, nous envoyons votre message par email au destinataire</li>
-							</ul>
-						</li>
-					</ul>
-					<a href="commander3.html">Etape suivante</a>
-				</section>
+								</ul>	
+								</li>					
+						
+								<button type="submit">Etape suivante</button>
+					</form>
+				</div>
 
 			</div>
 
