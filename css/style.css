@@ -1023,7 +1023,7 @@ nav ul {
 }
 /*--------FIN GRANDE CATEGORIE PRODUIT-------*/
 /*--------PANIER-------*/
-#pagePanier {
+.pagePanier {
   background-color: #88aa5c;
   border-radius: 10px;
   padding: 1em;
@@ -1032,7 +1032,7 @@ nav ul {
   position: relative;
   top: 0.5em;
 }
-#pagePanier table {
+.pagePanier table {
   background-color: #ecf5e3;
   border-radius: 10px;
   padding: 1em;
@@ -1168,6 +1168,7 @@ input[type="checkbox"] {
 }
 /*---------FIN COMMANDER---------*/
 .commander2 > div,
+.commander3 > div,
 .commander4 > div {
   background-color: #88aa5c;
   border-radius: 10px;
@@ -1176,6 +1177,7 @@ input[type="checkbox"] {
   margin-bottom: 3em;
 }
 .commander2 form,
+.commander3 form,
 .commander4 form {
   background-color: #ecf5e3;
   border-radius: 10px;
@@ -1212,6 +1214,13 @@ input[type="checkbox"] {
 .listeLabel > li {
   border-bottom: 1px dashed #68913a;
   padding: 0.5em 0 0.5em 0;
+}
+.adresseLiv {
+  font-size: 1.3em;
+  margin-bottom: 0.8em;
+}
+.adresseLiv span {
+  display: block;
 }
 /*--------FIN CONTENT-------*/
 /*--------FOOTER-------*/
