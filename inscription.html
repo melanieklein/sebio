@@ -6,27 +6,27 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<html lang="en-US">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
 	<title>SeBio - Produits naturels, bio et écologiques pour toute la famille&nbsp;!</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<h1 class="outliner">Site de SeBio - Produits naturels, bio et écologiques pour toute la famille&nbsp;!</h1>
 	<header class="centrer">
 		<div id="logoIntro">
-			<h1 id="logo"><a href="index.html"><img class="retina" src="img/logo.png" alt="Logo du site de SeBio" title="SeBio"></a></h1>
+			<h1 id="logo"><a href="index.html"><img src="img/logo.png" alt="Logo du site de SeBio" title="SeBio" width="276" height="176"></a></h1>
 			<div id="menu1">
 				<ul>
-					<li class="preMenu"><a href="#">Nouveautés</a></li>
-					<li class="preMenu"><a href="#">Promotion</a></li>
-					<li class="preMenu"><a href="#">Liquidation</a></li>					
+					<li class="preMenu"><a href="grandeCategorie.html">Nouveautés</a></li>
+					<li class="preMenu"><a href="grandeCategorie.html">Promotion</a></li>
+					<li class="preMenu"><a href="grandeCategorie.html">Liquidation</a></li>					
 				</ul>
 			</div>
-						<section id="panierLogin">
+			<section id="panierLogin">
 			<h1 class="outliner">Votre espace perso</h1>
 				<a href="panier.html">
 				<div id="panier">
@@ -63,7 +63,7 @@
 		</div>
 		<div id="accueilRecherche">
 			<div id="imgAccueil">
-				<a href="index.html"><img class="retina" src="img/accueil.png" alt="Retour à l'accueil" title="Accueil"></a>
+				<a href="index.html"><img src="img/accueil.png" alt="Retour à l'accueil" title="Accueil" width="39" height="43"></a>
 			</div>
 			<div id="recherche">	
 			<form action="#" method="post">
@@ -520,26 +520,20 @@
 				<div id="inscription">
 				<h1 class="titre">Créez votre compte</h1>
 				<form action="#" id="formIns">
+					<span>* Champs obligatoires</span>
 					<fieldset>
 						<h3>Vos paramètres de connexion</h3>				
-						<p><label for="email">Votre e-mail</label>
-						<input type="email" id="email"></p>
-						<p><label for="mdp">Créez votre mot de passe</label>
-						<input type="password" id="mdp"></p>
-						<p><label for="mdp2">Confirmez votre mot de passe</label>
-						<input type="password" id="mdp2"></p>
+						<p><label for="email">Votre e-mail*</label>
+						<input type="email" id="email"  required></p>
+						<p><label for="mdp">Créez votre mot de passe*</label>
+						<input type="password" id="mdp"  required></p>
+						<p><label for="mdp2">Confirmez votre mot de passe*</label>
+						<input type="password" id="mdp2"  required></p>
 					</fieldset>
 					<fieldset>
 						<h3>Vos coordonnées</h3>
 						<p><label for="tva">N° de TVA</label>
 						<input type="text" id="tva"></p>
-						<p>
-							<label for="genre">Genre</label>
-							<select name="genre" id="genre">
-								<option value="Homme">Homme</option>
-								<option value="Femme">Femme</option>
-							</select>
-						</p>
 						<p>
 							<label for="civ">Civilité</label>
 							<select name="civ" id="civ">
@@ -548,18 +542,18 @@
 								<option value="Mademoiselle">Mlle</option>
 							</select>
 						</p>
-						<p><label for="prenom">Prénom</label>
-						<input type="text" id="prenom"></p>
-						<p><label for="nom">Nom</label>
-						<input type="text" id="nom"></p>						
-						<p><label for="adr">Adresse</label>
-						<input type="text" id="adr"></p>
-						<p><label for="codeP">Code postal</label>
-						<input type="text" id="codeP">	</p>
-						<p><label for="ville">Ville</label>
-						<input type="text" id="ville"></p>
-						<p><label for="pays"></label>						
-						<select name="pays" id="pays">                  
+						<p><label for="prenom">Prénom*</label>
+						<input type="text" id="prenom" required></p>
+						<p><label for="nom">Nom*</label>
+						<input type="text" id="nom" required></p>						
+						<p><label for="adr">Adresse*</label>
+						<input type="text" id="adr" required></p>
+						<p><label for="codeP">Code postal*</label>
+						<input type="text" id="codeP" required>	</p>
+						<p><label for="ville">Ville*</label>
+						<input type="text" id="ville" required></p>
+						<p><label for="pays">Pays*</label>						
+						<select name="pays" id="pays" required>                  
 		                  <option data-abbr="BE" value="56" selected="selected">Belgique / België (Belgium)</option>		                
 		                  <option data-abbr="FR" value="250">France</option>		                  
 		                  <option data-abbr="CZ" value="203">Česká republika (Czech Republic)</option>		                  
@@ -608,14 +602,16 @@
 					</fieldset>
 					<fieldset>
 						<h3>Informations supplémentaires</h3>
-						<p>Souhaitez-vous recevoir notre bulletin d'information&nbsp;? Vous pouvez annuler votre inscription au bulletin d'information à tout moment.</p>
+						<p><label for="cgu">J'ai lu et j'accepte <a href="#" title="Lire les conditions générales d'utilisation'">les conditions générales d'utilisation</a></label>
+						<input type="checkbox" id="cgu"></p>
+						<p>Souhaitez-vous recevoir notre newsletter&nbsp;? Il s'agit d'un bulletin d'informations qui vous sera envoyé par email. Vous pouvez annuler cette inscription à tout moment.</p>
 						<p><label for="news">Newsletter mensuelle</label>
 						<input type="checkbox" id="news"></p>						
 						<p>
-							<label for="infoSup">Comment avez-vous connu SeBio&nbsp;?</label>
-							<select name="infoSup" id="infoSup">
+							<label for="infoSup">Comment avez-vous connu SeBio&nbsp;?*</label>
+							<select name="infoSup" id="infoSup" required >
 								<option value="105359">Par un ami/connaissance</option>      
-						        <option value="105360">Recherche sur Google</option>						      
+						         <option value="105360">Recherche sur Google</option>						      
 						        <option value="105361">Recherche sur Yahoo</option>						      
 						        <option value="105620">Recherche sur un autre moteur/site</option>						      
 						        <option value="105362">En passant devant notre show-room</option>						      
@@ -626,6 +622,7 @@
 						        <option value="105809">Site d'achat Vitalprix</option>						      
 						        <option value="105807">Site d'achat Le Guide</option>						      
 						        <option value="105810">Site d'achat Beauté-Test</option>
+						        <option value="105809">Autre...</option>
 							</select>
 						</p>						
 					</fieldset>
@@ -644,9 +641,9 @@
 	</div>
 	<footer>
 		<div id="contenuFooter" class="centrer">
-			<div id="hautPage"><a href="#panierLogin"><img src="img/hautPage.png" alt="Boutton pour retourner en haut de la page" class="retina"></a></div>
+			<div id="hautPage"><a href="#panierLogin"><img src="img/hautPage.png" alt="Boutton pour retourner en haut de la page" width="107" height="117"></a></div>
 			<div>
-				<a href="#" id="rappelLogo"><img class="retina" src="img/rappelLogo.png" alt="Logo du site de SeBio"></a>
+				<a href="#" id="rappelLogo"><img src="img/rappelLogo.png" alt="Logo du site de SeBio" width="209" height="133"></a>
 			
 				<ul id="listesFooter">
 					<li class="listeFooter">
@@ -691,10 +688,9 @@
 			</ul>
 		</div>
 	</footer>
-	
 
 
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/hoverintent.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
